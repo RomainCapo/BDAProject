@@ -1,4 +1,9 @@
 # BDAProject
+## Membres de l'équipe
+* Capocasale Romain
+* Freiburghaus Jonas
+* Moulin Vincent
+
 ## Ordre de choix de sujet
 1. 6 - Geospatial and Temporal Data Analysis on the New York City Taxi Trip Data
 2. 1 - Recommending Music and the Audioscrobbler Data Set
