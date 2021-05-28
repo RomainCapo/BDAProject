@@ -98,7 +98,7 @@ object RunGeoTime extends Serializable {
     }
     val boroughUDF = udf(bLookup)
 
-    taxiClean.groupBy(boroughUDF($"dropoffX", $"dropoffY")).count().show()
+    //taxiClean.groupBy(boroughUDF($"dropoffX", $"dropoffY")).count().show()
     val taxiDone = taxiClean.where("dropoffX != 0 and dropoffY != 0 and pickupX != 0 and pickupY != 0")
     //taxiDone.groupBy(boroughUDF($"dropoffX", $"dropoffY")).count().show()
 
@@ -129,27 +129,54 @@ object RunGeoTime extends Serializable {
     boroughDurations.unpersist()
 
     // Question 1 - Potential conflict
-
-    /*val quantileOnePct = boroughDurations.
+    // Question 1.1
+    val quantileOnePct = boroughDurations.
       selectExpr("seconds").
       where("seconds > 0  AND seconds < 60*60*4").
       stat.approxQuantile("seconds", Array(0.05), 0.0)(0)
 
-    println($"")
-
-
 
     val potentialConflictsByLicense = boroughDurations.
-      selectExpr("seconds", "license").
+      selectExpr("seconds", "license", "borough").
       where(s"seconds > 0 AND seconds < $quantileOnePct").
       groupBy("license").
       count().
       sort($"count".desc)
 
-    potentialConflictsByLicense.show()*/
+    /*potentialConflictsByLicense.show()
+    potentialConflictsByLicense.createOrReplaceTempView("counts")
+    val countSum = potentialConflictsByLicense.sqlContext.sql("select sum(count) as countSum from counts").map(row => row.getAs("countSum").asInstanceOf[Long]).collect()(0)
+    println("All potential conflict: " + countSum)*/
+
+    /*boroughDurations.
+      selectExpr("seconds", "license", "borough").
+      where(s"seconds > 0 AND seconds < $quantileOnePct")
+      .groupBy("borough").count().show()*/
+
+    // Question 1.2
+    val (startValues,counts) = sessions.select("tipAmount").where(s"tipAmount <= 20 ").map(value => value.getDouble(0)).rdd.histogram(15)
+
+    val avg = sessions.select(mean("tipAmount")).first().get(0)
+
+    println("Mean of tip amount : " + avg)
+
+    val evaluatorRMSE = new RegressionEvaluator().
+      setMetricName("rmse").
+      setLabelCol("label").
+      setPredictionCol("prediction")
+
+    val evaluatorMAE = new RegressionEvaluator().
+      setMetricName("mae").
+      setLabelCol("label").
+      setPredictionCol("prediction")
+
+    val dfTips = sessions.select("tipAmount").withColumn("prediction", lit(avg)).withColumnRenamed("tipAmount", "label")
+
+    println("Baseline RMSE : " + evaluatorRMSE.evaluate(dfTips))
+    println("Baseline MAE : " + evaluatorMAE.evaluate(dfTips))
 
     // Question 2 - MLlib
-    val preproccedData = sessions.
+    /*val preproccedData = sessions.
       withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH")).
       withColumn("weekday",date_format($"pickupTime".cast("timestamp"), "E")).
       withColumn("dropoffBorough", boroughUDF($"dropoffX", $"dropoffY")).
@@ -196,7 +223,7 @@ object RunGeoTime extends Serializable {
       predsPos.show()
 
     println("RMSE : " + evaluatorRMSE.evaluate(preds))
-    println("MAE : " + evaluatorMAE.evaluate(preds))
+    println("MAE : " + evaluatorMAE.evaluate(preds))*/
 
   }
 
