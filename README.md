@@ -1,4 +1,4 @@
-# BDAProject
+# Geospatial and Temporal Data Analysis on the New York City Taxi Trip DataFile
 ## Membres de l'équipe
 * Capocasale Romain
 * Freiburghaus Jonas
