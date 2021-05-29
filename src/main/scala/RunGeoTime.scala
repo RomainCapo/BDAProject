@@ -17,12 +17,21 @@ import com.esri.core.geometry.Point
 import org.apache.spark.SparkContext
 import spray.json._
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.ml.feature._
 import org.apache.spark.ml.regression.{LinearRegression, RandomForestRegressor}
-import org.apache.spark.ml.Pipeline
+import org.apache.spark.ml.{Estimator, Model, Pipeline}
 import org.apache.spark.ml.feature.RFormula
 import org.apache.spark.ml.evaluation.RegressionEvaluator
+import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.ml.tuning.ParamGridBuilder
 import org.apache.spark.ml.tuning.TrainValidationSplit
+import org.apache.spark.mllib.regression.{GeneralizedLinearAlgorithm, RegressionModel}
+import vegas.{AggOps, Bar, Bin, Nom, Quant, Quantitative}
+import vegas.DSL.Vegas
+import vegas.data.External.{Cars, Movies}
+import vegas.sparkExt.VegasSpark
+import vegas.spec.Spec.Scale
+import vegas.spec.Spec.TypeEnums.Nominal
 
 class RichRow(row: Row) {
   def getAs[T](field: String): Option[T] =
@@ -160,7 +169,7 @@ object RunGeoTime extends Serializable {
 
     println("Mean of tip amount : " + avg)
 
-    val evaluatorRMSE = new RegressionEvaluator().
+    /*val evaluatorRMSE = new RegressionEvaluator().
       setMetricName("rmse").
       setLabelCol("label").
       setPredictionCol("prediction")
@@ -168,14 +177,15 @@ object RunGeoTime extends Serializable {
     val evaluatorMAE = new RegressionEvaluator().
       setMetricName("mae").
       setLabelCol("label").
-      setPredictionCol("prediction")
+      setPredictionCol("prediction")*/
 
-    val dfTips = sessions.select("tipAmount").withColumn("prediction", lit(avg)).withColumnRenamed("tipAmount", "label")
+    /*val dfTips = sessions.select("tipAmount").withColumn("prediction", lit(avg)).withColumnRenamed("tipAmount", "label")
 
     println("Baseline RMSE : " + evaluatorRMSE.evaluate(dfTips))
-    println("Baseline MAE : " + evaluatorMAE.evaluate(dfTips))
+    println("Baseline MAE : " + evaluatorMAE.evaluate(dfTips))*/
 
     // Question 2 - MLlib
+    // Question 2.1
     /*val preproccedData = sessions.
       withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH")).
       withColumn("weekday",date_format($"pickupTime".cast("timestamp"), "E")).
@@ -190,41 +200,92 @@ object RunGeoTime extends Serializable {
     train.show()
     val lr = new LinearRegression().setLabelCol("label").setFeaturesCol("features") //Step 2
 
-    val stages = Array(rForm, lr)
-    val pipeline = new Pipeline().setStages(stages)
 
-    val params = new ParamGridBuilder()
-      //.addGrid(lr.elasticNetParam, Array(0.0, 0.5, 1.0))
+    val LrStages = Array(rForm, lr)
+    val lrPipeline = new Pipeline().setStages(LrStages)
+
+    val lrParams = new ParamGridBuilder()
+      .addGrid(lr.elasticNetParam, Array(0.0, 0.5, 1.0))
       .addGrid(lr.regParam, Array(0.1))
       .build()
 
-    val evaluatorRMSE = new RegressionEvaluator().
-      setMetricName("rmse").
-      setLabelCol("label").
-      setPredictionCol("prediction")
 
-    val evaluatorMAE = new RegressionEvaluator().
-      setMetricName("mae").
-      setLabelCol("label").
-      setPredictionCol("prediction")
-
-    val tvs = new TrainValidationSplit()
+    val lrTvs = new TrainValidationSplit()
       .setTrainRatio(0.75)
-      .setEstimatorParamMaps(params)
-      .setEstimator(pipeline)
+      .setEstimatorParamMaps(lrParams)
+      .setEstimator(lrPipeline)
       .setEvaluator(evaluatorRMSE)
       .setEvaluator(evaluatorMAE)
 
-    val tvsFitted = tvs.fit(train)
-    val preds = tvsFitted.transform(test)
+    val lrTvsFitted = lrTvs.fit(train)
+    val lrPreds = lrTvsFitted.transform(test)
 
 
-    val predsPos = preds.withColumn("prediction", when(col("prediction") > 0, col("prediction")).otherwise(0))
-      predsPos.show()
+    val lrPredsPos = lrPreds.withColumn("prediction", when(col("prediction") > 0, col("prediction")).otherwise(0))
+    lrPredsPos.show()
 
-    println("RMSE : " + evaluatorRMSE.evaluate(preds))
-    println("MAE : " + evaluatorMAE.evaluate(preds))*/
+    println("RMSE : " + evaluatorRMSE.evaluate(lrPredsPos))
+    println("MAE : " + evaluatorMAE.evaluate(lrPredsPos))
+    // Question 2.2
 
+    val rfr = new RandomForestRegressor().setLabelCol("label").setFeaturesCol("features") //Step 2
+
+
+    val rfrStages = Array(rForm, rfr)
+    val rfrPipeline = new Pipeline().setStages(rfrStages)
+
+    val rfrParams = new ParamGridBuilder()
+      .addGrid(rfr.maxDepth, Array(1,2,5))
+      .addGrid(rfr.maxBins, Array(16,32,64))
+      .build()
+
+
+    val rfrTvs = new TrainValidationSplit()
+      .setTrainRatio(0.75)
+      .setEstimatorParamMaps(lrParams)
+      .setEstimator(rfrPipeline)
+      .setEvaluator(evaluatorRMSE)
+      .setEvaluator(evaluatorMAE)
+
+    val rfrTvsFitted = rfrTvs.fit(train)
+    val rfrPreds = rfrTvsFitted.transform(test)
+
+
+    val rfrPredsPos = rfrPreds.withColumn("prediction", when(col("prediction") > 0, col("prediction")).otherwise(0))
+    rfrPredsPos.show()
+
+    println("RMSE : " + evaluatorRMSE.evaluate(rfrPredsPos))
+    println("MAE : " + evaluatorMAE.evaluate(rfrPredsPos))*/
+
+    //Question 3
+    /*val ScatterColorPlot =
+      Vegas().
+        withURL(Cars).
+        mark(vegas.Point).
+        encodeX("Horsepower", Quantitative).
+        encodeY("Miles_per_Gallon", Quantitative).
+        encodeColor(field="Origin", dataType=Nominal)
+    ScatterColorPlot.show*/
+    //sessions.select(col("pickupX"), col("pickupY")).show()
+
+    val dfScatter = sessions.select(col("dropoffX"), col("dropoffY"), col("tipAmount")).
+      where("dropoffX > -74.2 and dropoffX < -73.6 and dropoffY > 40.5 and dropoffY < 41")
+
+    val maxVal = 1000.0
+    val bucketizer = new Bucketizer()
+      .setInputCol("tipAmount")
+      .setOutputCol("tipBucket")
+      .setSplits(startValues.toArray :+ maxVal)
+
+    val dataBucketized = bucketizer.transform(dfScatter)
+
+
+    val a = Vegas(width = 1200.0, height = 1200.0).
+      withDataFrame(dataBucketized).
+      mark(vegas.Point).
+      encodeX("dropoffX", Quantitative, scale = vegas.Scale(domainValues = List( -74.3,-73.6))).
+      encodeY("dropoffY", Quantitative, scale = vegas.Scale(domainValues = List(40.5, 41.0))).
+      encodeColor(field="tipBucket", dataType=Nominal)
   }
 
   def safe[S, T](f: S => T): S => Either[T, (S, Exception)] = {
