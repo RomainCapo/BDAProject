@@ -51,6 +51,7 @@ case class Trip(
                  tripDistance: Double,
                  passengerCount: Int,
                  paymentType:String,
+                 surcharge: Double,
                  tipAmount:Double,
                  totalAmount:Double)
 
@@ -184,6 +185,29 @@ object RunGeoTime extends Serializable {
     println("Baseline RMSE : " + evaluatorRMSE.evaluate(dfTips))
     println("Baseline MAE : " + evaluatorMAE.evaluate(dfTips))*/
 
+    //Question 1.3
+    /*
+    val dfScatter = sessions.select(col("dropoffX"), col("dropoffY"), col("tipAmount")).
+      where("dropoffX > -74.2 and dropoffX < -73.6 and dropoffY > 40.5 and dropoffY < 41")
+
+    val maxVal = 1000.0
+    val bucketizer = new Bucketizer()
+      .setInputCol("tipAmount")
+      .setOutputCol("tipBucket")
+      .setSplits(startValues.toArray :+ maxVal)
+
+    val dataBucketized = bucketizer.transform(dfScatter)
+
+
+    val a = Vegas(width = 1200.0, height = 1200.0).
+      withDataFrame(dataBucketized).
+      mark(vegas.Point).
+      encodeX("dropoffX", Quantitative, scale = vegas.Scale(domainValues = List( -74.3,-73.6))).
+      encodeY("dropoffY", Quantitative, scale = vegas.Scale(domainValues = List(40.5, 41.0))).
+      encodeColor(field="tipBucket", dataType=Nominal)
+
+    a.show*/
+
     // Question 2 - MLlib
     // Question 2.1
     /*val preproccedData = sessions.
@@ -257,35 +281,48 @@ object RunGeoTime extends Serializable {
     println("RMSE : " + evaluatorRMSE.evaluate(rfrPredsPos))
     println("MAE : " + evaluatorMAE.evaluate(rfrPredsPos))*/
 
+    val costByMiles = 0.61
+
     //Question 3
-    /*val ScatterColorPlot =
-      Vegas().
-        withURL(Cars).
-        mark(vegas.Point).
-        encodeX("Horsepower", Quantitative).
-        encodeY("Miles_per_Gallon", Quantitative).
-        encodeColor(field="Origin", dataType=Nominal)
-    ScatterColorPlot.show*/
-    //sessions.select(col("pickupX"), col("pickupY")).show()
+    sessions.show()
+    val dfCost =  sessions.groupBy("license").agg(
+      sum("totalAmount").alias("sumAmount"),
+      sum("surcharge").alias("sumSurcharge"),
+      sum("tripDistance").alias("sumDistance"))
+      .withColumn("cost", col("sumSurcharge")+col("sumDistance")*costByMiles)
+      .withColumn("gain", col("sumAmount") - col("cost"))
 
-    val dfScatter = sessions.select(col("dropoffX"), col("dropoffY"), col("tipAmount")).
-      where("dropoffX > -74.2 and dropoffX < -73.6 and dropoffY > 40.5 and dropoffY < 41")
+    dfCost.sort($"gain".desc).show(20)
+    dfCost.sort($"gain".asc).show(20)
 
-    val maxVal = 1000.0
-    val bucketizer = new Bucketizer()
-      .setInputCol("tipAmount")
-      .setOutputCol("tipBucket")
-      .setSplits(startValues.toArray :+ maxVal)
+    sessions.
+      withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH"))
+      .groupBy("hour")
+      .avg("totalAmount", "surcharge", "tripDistance")
+      .withColumnRenamed("avg(totalAmount)", "avgAmount")
+      .withColumnRenamed("avg(surcharge)", "avgSurcharge")
+      .withColumnRenamed("avg(tripDistance)", "avgDistance")
+      .withColumn("cost", col("avgSurcharge")+col("avgDistance")*costByMiles)
+      .withColumn("gain", col("avgAmount") - col("cost"))
+      .sort("hour")
+      .show(24)
 
-    val dataBucketized = bucketizer.transform(dfScatter)
+    sessions
+      .withColumn("dropoffBorough", boroughUDF($"dropoffX", $"dropoffY"))
+    .withColumn("pickupBorough", boroughUDF($"pickupX", $"pickupY"))
+    .withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH"))
+      .where("dropoffBorough == pickupBorough")
+    .groupBy("dropoffBorough", "hour")
+      .avg("totalAmount", "surcharge", "tripDistance")
+      .withColumnRenamed("avg(totalAmount)", "avgAmount")
+      .withColumnRenamed("avg(surcharge)", "avgSurcharge")
+      .withColumnRenamed("avg(tripDistance)", "avgDistance")
+      .withColumn("cost", col("avgSurcharge")+col("avgDistance")*costByMiles)
+      .withColumn("gain", col("avgAmount") - col("cost"))
+      .sort("dropoffBorough", "hour").show(100)
 
 
-    val a = Vegas(width = 1200.0, height = 1200.0).
-      withDataFrame(dataBucketized).
-      mark(vegas.Point).
-      encodeX("dropoffX", Quantitative, scale = vegas.Scale(domainValues = List( -74.3,-73.6))).
-      encodeY("dropoffY", Quantitative, scale = vegas.Scale(domainValues = List(40.5, 41.0))).
-      encodeColor(field="tipBucket", dataType=Nominal)
+
   }
 
   def safe[S, T](f: S => T): S => Either[T, (S, Exception)] = {
@@ -330,6 +367,7 @@ object RunGeoTime extends Serializable {
       tripDistance = parseDoubleField(rr, "trip_distance"),
       passengerCount= parseIntField(rr, "passenger_count", 1),
       paymentType = rr.getAs[String]("payment_type").orNull,
+      surcharge = parseDoubleField(rr, "surcharge"),
       tipAmount = parseDoubleField(rr, "tip_amount"),
       totalAmount = parseDoubleField(rr, "total_amount")
     )
