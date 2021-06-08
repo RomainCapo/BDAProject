@@ -12,7 +12,31 @@
 ### Régression
 3. Prédire le tips d'un trajet par rapport aux données géospatiales, au temps et potentiellement d'autres variables
 
-## Ordre de choix de sujet
-1. 6 - Geospatial and Temporal Data Analysis on the New York City Taxi Trip Data
-2. 1 - Recommending Music and the Audioscrobbler Data Set
-3. 3 - Anomaly Detection in Network Traffic with K-means Clustering
+## 1. Description of the dataset (size, information it contains) - Jonas
+
+
+## 2. Description of the features used and any pre-processing to extract additional features - Romain
+
+
+## 3. Questions for which you hope to get an answer from the analysis
+### 3.1 Descriptive statistic - Vincent
+
+### 3.2 Machine learning - Romain
+
+### 3.3 Taxi profit - Jonas
+
+
+## 4. Algorithms you applied - Vincent
+
+
+## 5. Optimisations you performed - Romain
+-
+
+## 6. Your approach to testing and evaluation - Jonas
+
+
+## 7. Results you obtained - Vincent
+
+
+## 8. Possible future enhancements - Jonas
+
