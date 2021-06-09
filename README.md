@@ -110,7 +110,7 @@ Il y a 11 variables disponibles par ligne. Ces variables sont :
   * Prix uniquement du trajet en fonction du temps et de la distance parcourue
   * Variable continue
 * surcharge
-  * Surcharge, par exemple s'il y a des valise ou surcharge nocturne
+  * Surcharge, par exemple s'il y a des valises ou surcharge nocturne
   * Variable continue
 * mta_tax
   * Taxe pour la "Metropolitan Transit Authority"
