@@ -162,7 +162,7 @@ Finalement, nous avons calculé le profit moyen par heure et par quartier. Ceci 
 
 ## 6. Your approach to testing and evaluation
 
-Pour tester des statistiques descriptives simples, comme le nombre de lignes et le type de données, nous avons utiliser les commandes unix dans un terminal. Des exemples sont donnés dans la section 1 de ce rapport. 
+Pour tester des statistiques descriptives simples, comme le nombre de lignes et le type de données, nous avons utilisé les commandes unix dans un terminal. Des exemples sont donnés dans la section 1 de ce rapport. 
 
 Pour évaluer les modèles de régression, nous avons utilisé comme métriques, la racine de l'erreur quadratique moyenne (Root Mean Squared Error (RMSE)).
 
