@@ -130,32 +130,33 @@ Il y a 11 variables disponibles par ligne. Ces variables sont :
 ## 2. Description des caractéristiques utilisées et des étapes d'extraction de caractéristiques supplémentaires
 
 Les principales features utilisées sont : 
-    * Date et heure du début de la course - (pickupTime)
-    * Date et heure de la fin de la course - (dropoffTime)
-    * Identifiant du taxi - (license) 
-    * Latitude départ course - (pickupX)
-    * Longitude départ course - (pickupY)
-    * Latitude arrivée course - (dropoffX)
-    * Longitude arrivée course - (dropoffY)
-    * Montant du tip - (tipAmount)
-    * Prix total course - (totalAmount)
-    * Identifiant de l'entreprise de Taxi - (vendorId)
-    * Durée trajet en seconde - (tripTimeSecs)
-    * Distance du trajet - (tripDistance)
-    * Nombre de passagers dans taxi - (passengerCount)
-    * Moyen de paiement - (paymentType)
-    * Prix du trajet seulement - (fareAmount)
-    * Coût supplémentaire - (surcharge)
+
+* Date et heure du début de la course - (pickupTime)
+* Date et heure de la fin de la course - (dropoffTime)
+* Identifiant du taxi - (license) 
+* Latitude départ course - (pickupX)
+* Longitude départ course - (pickupY)
+* Latitude arrivée course - (dropoffX)
+* Longitude arrivée course - (dropoffY)
+* Montant du tip - (tipAmount)
+* Prix total course - (totalAmount)
+* Identifiant de l'entreprise de Taxi - (vendorId)
+* Durée trajet en seconde - (tripTimeSecs)
+* Distance du trajet - (tripDistance)
+* Nombre de passagers dans taxi - (passengerCount)
+* Moyen de paiement - (paymentType)
+* Prix du trajet seulement - (fareAmount)
+* Coût supplémentaire - (surcharge)
 
 Les features extraction sont : 
-    * extraction des **secondes**, **heures** et **jour de la semaine** à partir des données timestep (pickupTime,dropoffTime)
-    * extraction du **quartier de départ** du taxi à partir des coordonnées GPS (pickupX, pickupY)
-    * extraction du **quartier d'arrivée** du taxi à partir des coordonnées GPS (dropoffX, dropoffY)
-    * Bucketing sur le tipAmount
-    * **Calcul du coût d'un taxi** = distance moyenne * coût par Miles
-    * **Calcul du gain d'un taxi** = prix total course * coût du taxi
-    * **Prix du trajet seulement** = totalAmount - tipAmount
 
+* extraction des **secondes**, **heures** et **jour de la semaine** à partir des données timestep (pickupTime,dropoffTime)
+* extraction du **quartier de départ** du taxi à partir des coordonnées GPS (pickupX, pickupY)
+* extraction du **quartier d'arrivée** du taxi à partir des coordonnées GPS (dropoffX, dropoffY)
+* Bucketing sur le tipAmount
+* **Calcul du coût d'un taxi** = distance moyenne * coût par Miles
+* **Calcul du gain d'un taxi** = prix total course * coût du taxi
+* **Prix du trajet seulement** = totalAmount - tipAmount
 
 
 ## 3. Questions auxquelles on souhaite obtenir une réponse en utilisant les données
@@ -219,43 +220,43 @@ On peut également noter que le regorupement en bas à droite est l'emplacement 
 La question posée à ce point est : Est t-il possible de prédire le tip qu'un taxi reçoit pour une course avec un modèle de machine learning ?. Le second objectif est de voir si les modèles de machines learning vont obtenir des résultats supérieurs aux scores de la baseline calculé au point précédent. Pour ce point, la librairie Spark ML est utilisée. Comme le tips est une valeur continue, les modèles utilisés devront donc également prédire une valeur continue. Dans ce cas des modèles de régression sont utilisés.
 
 Pour cette phase deux modèles de machines learning ont été utilisés :
-    * Régression linéaire
-    * Régression avec une forêt aléatoire
+* Régression linéaire
+* Régression avec une forêt aléatoire
 
 Premièrement une RFormula est définie pour indiquer à Spark quel est le label et les features. Dans notre cas les features sont les suivantes, c'est elles qui vont permettre de déterminer le prix du tips: 
-    * vendorId
-    * tripTimeSecs 
-    * tripDistance 
-    * passengerCount 
-    * paymentType 
-    * hour 
-    * weekday 
-    * dropoffBorough 
-    * pickupBorough 
-    * fareAmount
+* vendorId
+* tripTimeSecs 
+* tripDistance 
+* passengerCount 
+* paymentType 
+* hour 
+* weekday 
+* dropoffBorough 
+* pickupBorough 
+* fareAmount
 
 Le label est la colonne : tipAmount
 
 Les données sont splittées en jeu d'entraînement et de test avec le ratio suivant :
-    * 0.7% entraînement
-    * 0.3% test
+* 0.7% entraînement
+* 0.3% test
 
 Pour plus de simplification, un pipeline qui inclut le modèle et la RFormula est créé. 
 
 La classe ParamsBuilder est également utilisé pour pouvoir tuner les hyperparmètres des modèles. Pour la régression les hyperparamètres sont : 
-    * elasticNetParam
-    * regParam
+* elasticNetParam
+* regParam
 
 Pour la forêt aléatoire, les hyperparamètres sont : 
-    * maxDepth
-    * maxBins
+* maxDepth
+* maxBins
 
 Une recherche par quadrillage est donc effectuée sur ces hyperparamètres pour trouver ceux qui vont donner les meilleurs scores pour un modèle donné.
 
 Le jeu d'entraînement est également séparé en jeu d'entraînement et validation à l'aide de la classe 'TrainValidationSplit' avec un ratio de 0.75%. À cet objet sont également ajouté : 
-    * Les différentes hyperparamêtres définies ci-dessus
-    * La pipeline
-    * Les métriques (RMSE et MAE)
+* Les différentes hyperparamêtres définies ci-dessus
+* La pipeline
+* Les métriques (RMSE et MAE)
 
 Avec toutes ces différentes étapes définies, le modèle est maintenant prêt à être entraîné à l'aide de la méthode 'fit()'. Les prédictions sur le jeu de test sont ensuite effectuées avec la méthode 'transform()'. Il est a noter que pour rendre les prédictions plus réalistes toutes les valeurs négatives que le modèle a prédites sont ramenées à 0 (max(0, prediction)) car il n'est pas possible qu'un passager d'un taxi donne un tips négatif.
 
