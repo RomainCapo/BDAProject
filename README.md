@@ -15,7 +15,7 @@
 
 3. Prédire le tips d'un trajet par rapport aux données géospatiales, au temps et potentiellement d'autres variables
 
-## 1. Description of the dataset (size, information it contains)
+## 1. Description du jeu de données (taille, information contenu)
 
 Les données ont été téléchargées en suivant les liens ci-dessous :
 
@@ -127,7 +127,7 @@ Il y a 11 variables disponibles par ligne. Ces variables sont :
 
 **Remarque**: les 4 premières variables ont la même définition que pour le fichier trip_data_1.csv.
 
-## 2. Description of the features used and any pre-processing to extract additional features - Romain
+## 2. Description des caractéristiques utilisées et des étapes d'extraction de caractéristiques supplémentaires - Romain
 
 Les principales features utilisées sont : 
     * Date et heure du début de la course - (pickupTime)
@@ -158,7 +158,7 @@ Les features extraction sont :
 
 
 
-## 3. Questions for which you hope to get an answer from the analysis
+## 3. Questions auxquelles on souhaite obtenir une réponse en utilisant les données
 
 ### 3.1 Statistiques descriptives - Vincent
 
@@ -261,7 +261,7 @@ Avec toutes ces différentes étapes définies, le modèle est maintenant prêt 
 
 On constate au vu des résultats obtenus au chapitre 7 que le modèle obtiennent des résultats supérieurs à la baseline calcul au point 1. On constate que le modèle avec les meilleurs résultats est la forêt aléatoire avec une MAE de 0.39 et une RMSE 1.05. Donc pour répondre à la question posée en début de chapitre, oui il est possible de construire un modèle de machine learning capable de prédire le prix qui a de meilleur résultats que simplement prendre la moyenne des tips.
 
-### 3.3 Taxi profit
+### 3.3 Profit des taxis
 
 Pour calculer le profit nous avons cherché le coût total d'appartenance d'une voiture par Mile. Nous avons trouvé ce coût sur le site du ["Bureau of Transportation Statistics"](https://www.bts.gov/content/average-cost-owning-and-operating-automobilea-assuming-15000-vehicle-miles-year). Nous l'avons arrondi à 61 cents.
 
@@ -294,13 +294,13 @@ Ces algorithmes ont été utilisés avec l'aide de différents composants Spark 
 
 Ils ont été évalués avec les métriques RMSE et MAE.
 
-## 5. Optimisations you performed - Romain
+## 5. Optimisations réalisées
 
 Au niveau des optimisations les Dataframe ont été principalement été utilisé à la place des RDD, pour profiter des optimisations fournit par Spark et notamment Catalyst. Au niveau des performances et du temps d'exécution, aucune autre optimisation particulière n'a été mise en place. 
 
 Une optimisation, mais cette fois-ci des performances mises en place est l'utilisation de la recherche per quadrillage pour la question 2 sur le machine learning. Ce processus permet d'optimiser les hyperparamètres utilisés pour maximiser les performances des modèles. 
 
-## 6. Your approach to testing and evaluation
+## 6. Approche de test et d'évaluation
 
 Pour tester des statistiques descriptives simples, comme le nombre de lignes et le type de données, nous avons utilisé les commandes unix dans un terminal. Des exemples sont donnés dans la section 1 de ce rapport. 
 
@@ -316,7 +316,7 @@ La déviation absolue moyenne est moins sensible aux valeurs extrêmes.
 
 Afin d'avoir un modèle simple de comparaison, nous avons calculé la valeur moyenne du pourboire comme prédiction. Ainsi nos modèles de régression plus complexes se doivent au moins de faire mieux que la RMSE et le MAE de ce modèle simple.
 
-## 7. Resultats obtenus - Vincent
+## 7. Résultats obtenus - Vincent
 
 Nous avons pu, au travers de l'analyse du jeu de données des trajets de taxi de New York, répondre à des questions que nous nous posions sur cette problématique.
 
@@ -329,7 +329,7 @@ Nous avons été capable de :
 
 Les résultats obtenus sont plutôt cohérents et des conclusions logiques peuvent expliquer nos résultats.
 
-## 8. Possible future enhancements
+## 8. Améliorations possibles
 
 La visualisation de la densité de taxi dans la ville de New York pourrait être améliorée en utilisant une carte de chaleur superposée à un plan de la ville.
 
