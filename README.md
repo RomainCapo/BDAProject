@@ -129,11 +129,82 @@ Il y a 11 variables disponibles par ligne. Ces variables sont :
 
 ## 2. Description of the features used and any pre-processing to extract additional features - Romain
 
+Les principales features utilisé sont : 
+    * Date et heure du début de la course - (pickupTime)
+    * Date et heure de la fin de la course - (dropoffTime)
+    * Identifiant du taxi - (license) 
+    * Latitude départ course - (pickupX)
+    * Longitude départ course - (pickupY)
+    * Latitude arrivé course - (dropoffX)
+    * Longitude arrivé course - (dropoffY)
+    * Montant du tip - (tipAmount)
+    * Prix total course - (totalAmount)
+    * Identifiant de l'entreprise de Taxi - (vendorId)
+    * Durée trajet en seconde - (tripTimeSecs)
+    * Distance du trajet - (tripDistance)
+    * Nombre de passager dans taxi - (passengerCount)
+    * Moyen de paiement - (paymentType)
+    * Prix du trajet seulement - (fareAmount)
+    * Cout suplémentaire - (surcharge)
+
+Les features extraction sont : 
+    * extraction des **secondes**, **heures** et **jour de la semaine** à partir des données timestep (pickupTime,dropoffTime)
+    * extraction du **quartier de départ** du taxi à partir des coordonnées GPS (pickupX, pickupY)
+    * extraction du **quartier d'arrivé** du taxi à partir des coordonnées GPS (dropoffX, dropoffY)
+    * Bucketing sur le tipAmount
+    * **Calcul du coût d'un taxi** = distance moyenne * coût par Miles
+    * **Calcul du gain d'un taxi** = prix total course * coût du taxi
+    * **Prix du trajet seulement** = totalAmount - tipAmount
 
 ## 3. Questions for which you hope to get an answer from the analysis
 ### 3.1 Descriptive statistic - Vincent
 
 ### 3.2 Machine learning - Romain
+
+La question posé à ce point est : Est t-il possible de prédire le tip qu'un taxi reçois pour une course avec un modèle de machine learning ?. Le seconde objectif est de voir si les modèles de machines learning vont obtenir des résultats supérieur aux scores de la baseline calculé au point préccedent. Pour ce point, la librairie Spark ML est utilisé. Comme le tips est une valeur continue, les modèles utilisé devront donc également prédire une valeur continue. Dans ce cas des modèles de régression sont utilisés.
+
+Pour cette phase deux modèles de machines learning ont été utilisé :
+    * Régression linéaire
+    * Régression avec une forêt aléatoire
+
+Premièrement une RFormula est défini pour indiquer à Spark quel est le label et les features. Dans notre cas les features sont les suivantes, c'est elles qui vont permettre de determiner le prix du tips: 
+    * vendorId
+    * tripTimeSecs 
+    * tripDistance 
+    * passengerCount 
+    * paymentType 
+    * hour 
+    * weekday 
+    * dropoffBorough 
+    * pickupBorough 
+    * fareAmount
+
+Le label est la collone : tipAmount
+
+Les données sont splitté en jeu d'entrainement et de test avec le ratio suivant :
+    * 0.7% entrainement
+    * 0.3% test
+
+Pour plus de simplification, une pipeline qui inclus le modèle et la RFormula est créé. 
+
+La classe params builder est également utilisé pour pouvoir tuner les hyperparmètres des modèles. Pour la régression les hyperparamètres sont : 
+    * elasticNetParam
+    * regParam
+
+Pour la fôret aléatoire les hyperparamètres sont : 
+    * maxDepth
+    * maxBins
+
+Un recherche par quadrillage est donc effectué sur ces hyperparamètres pour trouver ceux qui vont donner les meilleurs scores pour un modèle donné.
+
+Le jeu d'entrainement est également séparé en jeu de d'entrainement et validation à l'aide de la classe 'TrainValidationSplit' avec un ratio de 0.75%. À cet objet sont également ajouté : 
+    * Les difféntes hyperparamêtres défini ci-dessus
+    * La pipeline
+    * Les métriques (RMSE et MAE)
+
+Avec toutes ces différentes étapes défini le modèle est meaintenant prêt à être entrainé à l'aide de la méthode 'fit()'. Les prédictions sur le jeu de test sont ensuite effectué avec la méthode 'transform()'. Il est a noter que pour rendre les prédictions plus réaliste toutes les valeurs négatives que le modèle à prédit sont ramené à 0 (max(0, prediction)) car il n'est pas possible qu'un passager d'un taxi donne un tips négatif.
+
+On constate au vu des résultats obtenus au chapitre 7 que le modèles obtiennent des résultats supérieur à la baseline calcul au point 1. On constate que le modèle avec les meilleurs résultats est la forêt aléatoire avec une MAE de 0.39 et une RMSE 1.05. Donc pour répondre à la question posé en début de chapitre, oui il est possible de construire un modèle de machine learning capable de prédire le prix qui a de meilleur résultats que simplement prendre la moyenne des tips.
 
 ### 3.3 Taxi profit
 
@@ -158,7 +229,9 @@ Finalement, nous avons calculé le profit moyen par heure et par quartier. Ceci 
 
 ## 5. Optimisations you performed - Romain
 
+Au niveau des optimisation les Dataframe ont été principalement été utilisé à la place des RDD, pour profiter des optimisations fournit par Spark et notamment Catalyst. Au niveau des performances et du temps d'éxecution aucune autre optimisation particulière n'a été mis en place. 
 
+Une optimisation mais cette fois ci des perfomances mis en place est l'utilisation de la recherche per quadrillage pour la question 2 sur le machine learning. Ce processus permet d'optimiser les hyperparamètres utilisé pour maximiser les performances des modèles. 
 
 ## 6. Your approach to testing and evaluation
 

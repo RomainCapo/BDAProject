@@ -25,7 +25,6 @@ import org.apache.spark.ml.evaluation.RegressionEvaluator
 import org.apache.spark.ml.param.ParamMap
 import org.apache.spark.ml.tuning.ParamGridBuilder
 import org.apache.spark.ml.tuning.TrainValidationSplit
-import org.apache.spark.mllib.regression.{GeneralizedLinearAlgorithm, RegressionModel}
 import vegas.{AggOps, Bar, Bin, Nom, Quant, Quantitative}
 import vegas.DSL.Vegas
 import vegas.data.External.{Cars, Movies}
@@ -80,7 +79,7 @@ object RunGeoTime extends Serializable {
     }
     val hoursUDF = udf(hours)
 
-    //taxiGood.groupBy(hoursUDF($"pickupTime", $"dropoffTime").as("h")).count().sort("h").show()
+    taxiGood.groupBy(hoursUDF($"pickupTime", $"dropoffTime").as("h")).count().sort("h").show()
 
     // register the UDF, use it in a where clause
     spark.udf.register("hours", hours)
@@ -135,7 +134,7 @@ object RunGeoTime extends Serializable {
       }).toDF("borough", "seconds", "license")
 
     println("Borough duration : ")
-    boroughDurations
+   boroughDurations
       .where("seconds > 0")
       .groupBy("borough")
       .agg(avg("seconds"), stddev("seconds"))
@@ -148,16 +147,17 @@ object RunGeoTime extends Serializable {
 
     // Compute 0.05 quantile
     val quantile = 0.05
-    val quantileOnePct = boroughDurations
+    val quantileFivePct = boroughDurations
       .selectExpr("seconds")
       .where("seconds > 0  AND seconds < 60*60*4")
       .stat
       .approxQuantile("seconds", Array(quantile), 0.0)(0)
+    println("Quantile 5% : " + quantileFivePct)
 
     // Potential conflicts by license
     val potentialConflictsByLicense = boroughDurations
       .selectExpr("seconds", "license", "borough")
-      .where(s"seconds > 0 AND seconds < $quantileOnePct")
+      .where(s"seconds > 0 AND seconds < $quantileFivePct")
       .groupBy("license")
       .count()
       .sort($"count".desc)
@@ -177,7 +177,7 @@ object RunGeoTime extends Serializable {
     println("Potential conflict by borough : ")
     boroughDurations
       .selectExpr("seconds", "license", "borough")
-      .where(s"seconds > 0 AND seconds < $quantileOnePct")
+      .where(s"seconds > 0 AND seconds < $quantileFivePct")
       .groupBy("borough")
       .count()
       .show()
@@ -188,7 +188,7 @@ object RunGeoTime extends Serializable {
       .select(mean("tipAmount"))
       .first()
       .get(0)
-    println("Mean of tip amount : " + avg)
+    println("Mean of tip amount : " + avgTip)
 
     // Define evaluator with MSE and MAE
     val evaluatorRMSE = new RegressionEvaluator()
@@ -204,7 +204,7 @@ object RunGeoTime extends Serializable {
     // Compute the average tip
     val dfTips = sessions
       .select("tipAmount")
-      .withColumn("prediction", lit(avg))
+      .withColumn("prediction", lit(avgTip))
       .withColumnRenamed("tipAmount", "label")
 
     println("Baseline RMSE : " + evaluatorRMSE.evaluate(dfTips))
@@ -219,6 +219,10 @@ object RunGeoTime extends Serializable {
       .rdd
       .histogram(15)
 
+    println("Tips bucket start values : " + startValues.toArray)
+    println("Tips bucket bin values : " + counts.toArray)
+
+
     val maxVal = 1000.0
     val bucketizer = new Bucketizer()
       .setInputCol("tipAmount")
@@ -230,23 +234,25 @@ object RunGeoTime extends Serializable {
       .select(col("dropoffX"), col("dropoffY"), col("tipAmount"))
       .where("dropoffX > -74.2 and dropoffX < -73.6 and dropoffY > 40.5 and dropoffY < 41")
 
+    println("Bucketized tips : ")
     val dataBucketized = bucketizer.transform(dfScatter)
+    dataBucketized.show()
 
     //Plot the coordinates and with tip scale
-    /*val scatterPlot = Vegas(width = 1200.0, height = 1200.0)
+    val scatterPlot = Vegas(width = 1200.0, height = 1200.0)
       .withDataFrame(dataBucketized)
       .mark(vegas.Point)
       .encodeX("dropoffX", Quantitative, scale = vegas.Scale(domainValues = List( -74.3,-73.6)))
       .encodeY("dropoffY", Quantitative, scale = vegas.Scale(domainValues = List(40.5, 41.0)))
       .encodeColor(field="tipBucket", dataType=Nominal)
 
-    scatterPlot.show*/
+    scatterPlot.show
 
     // Question 2 - MLlib
     // Question 2.1 - Linear regression
 
     // Preprocess columns
-    val preproccedData = sessions.
+    val preproccedData = sessions
       .withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH"))
       .withColumn("weekday",date_format($"pickupTime".cast("timestamp"), "E"))
       .withColumn("dropoffBorough", boroughUDF($"dropoffX", $"dropoffY"))
@@ -344,9 +350,8 @@ object RunGeoTime extends Serializable {
     val dfCost =  sessions.groupBy("license")
       .agg(
         sum("totalAmount").alias("sumAmount"),
-        sum("surcharge").alias("sumSurcharge"),
         sum("tripDistance").alias("sumDistance"))
-      .withColumn("cost", col("sumSurcharge") + col("sumDistance") * costByMiles)
+      .withColumn("cost", col("sumDistance") * costByMiles)
       .withColumn("gain", col("sumAmount") - col("cost"))
 
     println("Top descending 20 profit : ")
@@ -362,9 +367,8 @@ object RunGeoTime extends Serializable {
       .groupBy("hour")
       .avg("totalAmount", "surcharge", "tripDistance")
       .withColumnRenamed("avg(totalAmount)", "avgAmount")
-      .withColumnRenamed("avg(surcharge)", "avgSurcharge")
       .withColumnRenamed("avg(tripDistance)", "avgDistance")
-      .withColumn("cost", col("avgSurcharge") + col("avgDistance") * costByMiles)
+      .withColumn("cost", col("avgDistance") * costByMiles)
       .withColumn("gain", col("avgAmount") - col("cost"))
       .sort("hour")
       .show(24)
@@ -378,11 +382,22 @@ object RunGeoTime extends Serializable {
       .groupBy("dropoffBorough", "hour")
       .avg("totalAmount", "surcharge", "tripDistance")
       .withColumnRenamed("avg(totalAmount)", "avgAmount")
-      .withColumnRenamed("avg(surcharge)", "avgSurcharge")
       .withColumnRenamed("avg(tripDistance)", "avgDistance")
-      .withColumn("cost", col("avgSurcharge") + col("avgDistance") * costByMiles)
+      .withColumn("cost", col("avgDistance") * costByMiles)
       .withColumn("gain", col("avgAmount") - col("cost"))
       .sort("dropoffBorough", "hour").show(100)
+
+
+    println("Cost by taxi vendor by hour ")
+    sessions
+      .withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH"))
+      .groupBy("vendorId", "hour")
+      .avg("totalAmount", "surcharge", "tripDistance")
+      .withColumnRenamed("avg(totalAmount)", "avgAmount")
+      .withColumnRenamed("avg(tripDistance)", "avgDistance")
+      .withColumn("cost", col("avgDistance") * costByMiles)
+      .withColumn("gain", col("avgAmount") - col("cost"))
+      .sort("vendorId", "hour").show(100)
   }
 
   def safe[S, T](f: S => T): S => Either[T, (S, Exception)] = {
