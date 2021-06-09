@@ -127,7 +127,7 @@ Il y a 11 variables disponibles par ligne. Ces variables sont :
 
 **Remarque**: les 4 premières variables ont la même définition que pour le fichier trip_data_1.csv.
 
-## 2. Description des caractéristiques utilisées et des étapes d'extraction de caractéristiques supplémentaires - Romain
+## 2. Description des caractéristiques utilisées et des étapes d'extraction de caractéristiques supplémentaires
 
 Les principales features utilisées sont : 
     * Date et heure du début de la course - (pickupTime)
@@ -160,7 +160,7 @@ Les features extraction sont :
 
 ## 3. Questions auxquelles on souhaite obtenir une réponse en utilisant les données
 
-### 3.1 Statistiques descriptives - Vincent
+### 3.1 Statistiques descriptives
 
 **1.1 Conflits potentiels**
 
@@ -214,7 +214,7 @@ A noter que les pourboires sont afficher sur le graphe au point de dépôt du cl
 
 On peut également noter que le regorupement en bas à droite est l'emplacement de l'aéroport JFK de New York, ce qui explique cette condensation de pourboire à un seul et même endroit, plutôt éloigné des autres.
 
-### 3.2 Machine learning - Romain
+### 3.2 Machine learning
 
 La question posée à ce point est : Est t-il possible de prédire le tip qu'un taxi reçoit pour une course avec un modèle de machine learning ?. Le second objectif est de voir si les modèles de machines learning vont obtenir des résultats supérieurs aux scores de la baseline calculé au point précédent. Pour ce point, la librairie Spark ML est utilisée. Comme le tips est une valeur continue, les modèles utilisés devront donc également prédire une valeur continue. Dans ce cas des modèles de régression sont utilisés.
 
@@ -316,7 +316,7 @@ La déviation absolue moyenne est moins sensible aux valeurs extrêmes.
 
 Afin d'avoir un modèle simple de comparaison, nous avons calculé la valeur moyenne du pourboire comme prédiction. Ainsi nos modèles de régression plus complexes se doivent au moins de faire mieux que la RMSE et le MAE de ce modèle simple.
 
-## 7. Résultats obtenus - Vincent
+## 7. Résultats obtenus
 
 Nous avons pu, au travers de l'analyse du jeu de données des trajets de taxi de New York, répondre à des questions que nous nous posions sur cette problématique.
 
