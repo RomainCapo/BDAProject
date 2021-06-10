@@ -389,7 +389,7 @@ object RunGeoTime extends Serializable {
       .withColumn("gain", col("avgAmount") - col("cost"))
       .sort("dropoffBorough", "hour").show(200)
 
-    println("Cost by taxi vendor by hour ")
+    println("Cost by taxi vendor by hour : ")
     sessions
       .withColumn("hour",date_format($"pickupTime".cast("timestamp"), "HH"))
       .groupBy("vendorId", "hour")

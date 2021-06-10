@@ -1,0 +1,1078 @@
+"C:\Program Files\Java\jdk1.8.0_291\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\lib\idea_rt.jar=53440:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;D:\BDAProject\target\scala-2.11\classes;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\asm\asm\3.1\asm-3.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\carrotsearch\hppc\0.7.2\hppc-0.7.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\chuusai\shapeless_2.11\2.3.2\shapeless_2.11-2.3.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\clearspring\analytics\stream\2.7.0\stream-2.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\esotericsoftware\kryo-shaded\4.0.2\kryo-shaded-4.0.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\esri\geometry\esri-geometry-api\1.2.1\esri-geometry-api-1.2.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.6.7\jackson-annotations-2.6.7.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.7.9\jackson-core-2.7.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.6.7.3\jackson-databind-2.6.7.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-paranamer\2.7.9\jackson-module-paranamer-2.7.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\module\jackson-module-scala_2.11\2.6.7.1\jackson-module-scala_2.11-2.6.7.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\fommil\netlib\core\1.1.2\core-1.1.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\julien-truffaut\monocle-core_2.11\1.1.0\monocle-core_2.11-1.1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\julien-truffaut\monocle-macro_2.11\1.1.0\monocle-macro_2.11-1.1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\luben\zstd-jni\1.4.4-3\zstd-jni-1.4.4-3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\mpilquist\simulacrum_2.11\0.10.0\simulacrum_2.11-0.10.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\github\rwl\jtransforms\2.4.0\jtransforms-2.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\nimbusds\nimbus-jose-jwt\3.9\nimbus-jose-jwt-3.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\ning\compress-lzf\1.0.3\compress-lzf-1.0.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\squareup\okhttp\okhttp\2.4.0\okhttp-2.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\squareup\okio\okio\1.4.0\okio-1.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\jersey\contribs\jersey-guice\1.9\jersey-guice-1.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\jersey\jersey-client\1.9\jersey-client-1.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\jersey\jersey-core\1.9\jersey-core-1.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\jersey\jersey-json\1.9\jersey-json-1.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\jersey\jersey-server\1.9\jersey-server-1.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sun\xml\bind\jaxb-impl\2.2.3-1\jaxb-impl-2.2.3-1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\twitter\chill-java\0.9.3\chill-java-0.9.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\twitter\chill_2.11\0.9.3\chill_2.11-0.9.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\univocity\univocity-parsers\2.7.3\univocity-parsers-2.7.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\vlkan\flatbuffers\1.2.0-3f79e055\flatbuffers-1.2.0-3f79e055.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-beanutils\commons-beanutils-core\1.8.0\commons-beanutils-core-1.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\airlift\aircompressor\0.10\aircompressor-0.10.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-core_2.11\0.7.0\circe-core_2.11-0.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-generic_2.11\0.7.0\circe-generic_2.11-0.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-jawn_2.11\0.7.0\circe-jawn_2.11-0.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-numbers_2.11\0.7.0\circe-numbers_2.11-0.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\circe\circe-parser_2.11\0.7.0\circe-parser_2.11-0.7.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\dropwizard\metrics\metrics-core\3.1.5\metrics-core-3.1.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\dropwizard\metrics\metrics-graphite\3.1.5\metrics-graphite-3.1.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\dropwizard\metrics\metrics-json\3.1.5\metrics-json-3.1.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\dropwizard\metrics\metrics-jvm\3.1.5\metrics-jvm-3.1.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\netty\netty-all\4.1.47.Final\netty-all-4.1.47.Final.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\netty\netty\3.9.9.Final\netty-3.9.9.Final.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\io\spray\spray-json_2.11\1.3.3\spray-json_2.11-1.3.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\joda-time\joda-time\2.9.9\joda-time-2.9.9.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\minidev\json-smart\1.1.1\json-smart-1.1.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\razorvine\pyrolite\4.13\pyrolite-4.13.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\sf\py4j\py4j\0.10.7\py4j-0.10.7.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\net\sourceforge\f2j\arpack_combined_all\0.1\arpack_combined_all-0.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr4-runtime\4.7\antlr4-runtime-4.7.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\arrow\arrow-format\0.10.0\arrow-format-0.10.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\arrow\arrow-memory\0.10.0\arrow-memory-0.10.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\arrow\arrow-vector\0.10.0\arrow-vector-0.10.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\avro\avro-ipc\1.8.2\avro-ipc-1.8.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\avro\avro-mapred\1.8.2\avro-mapred-1.8.2-hadoop2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\avro\avro\1.8.2\avro-1.8.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-crypto\1.0.0\commons-crypto-1.0.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-math3\3.4.1\commons-math3-3.4.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\curator\curator-client\2.7.1\curator-client-2.7.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\curator\curator-framework\2.7.1\curator-framework-2.7.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\curator\curator-recipes\2.7.1\curator-recipes-2.7.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-annotations\2.8.0\hadoop-annotations-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-auth\2.8.0\hadoop-auth-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-client\2.8.0\hadoop-client-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-common\2.8.0\hadoop-common-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs-client\2.8.0\hadoop-hdfs-client-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.8.0\hadoop-hdfs-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-mapreduce-client-app\2.8.0\hadoop-mapreduce-client-app-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-mapreduce-client-common\2.8.0\hadoop-mapreduce-client-common-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-mapreduce-client-core\2.8.0\hadoop-mapreduce-client-core-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.8.0\hadoop-mapreduce-client-jobclient-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.8.0\hadoop-mapreduce-client-shuffle-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-yarn-api\2.8.0\hadoop-yarn-api-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-yarn-client\2.8.0\hadoop-yarn-client-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-yarn-common\2.8.0\hadoop-yarn-common-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-yarn-server-common\2.8.0\hadoop-yarn-server-common-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-yarn-server-nodemanager\2.8.0\hadoop-yarn-server-nodemanager-2.8.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\htrace\htrace-core4\4.0.1-incubating\htrace-core4-4.0.1-incubating.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\ivy\ivy\2.4.0\ivy-2.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\orc\orc-core\1.5.5\orc-core-1.5.5-nohive.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\orc\orc-mapreduce\1.5.5\orc-mapreduce-1.5.5-nohive.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\orc\orc-shims\1.5.5\orc-shims-1.5.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-column\1.10.1\parquet-column-1.10.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-common\1.10.1\parquet-common-1.10.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-encoding\1.10.1\parquet-encoding-1.10.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-format\2.4.0\parquet-format-2.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-hadoop\1.10.1\parquet-hadoop-1.10.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\parquet\parquet-jackson\1.10.1\parquet-jackson-1.10.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-catalyst_2.11\2.4.8\spark-catalyst_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-core_2.11\2.4.8\spark-core_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-graphx_2.11\2.4.8\spark-graphx_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-kvstore_2.11\2.4.8\spark-kvstore_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-launcher_2.11\2.4.8\spark-launcher_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-mllib-local_2.11\2.4.8\spark-mllib-local_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-mllib_2.11\2.4.8\spark-mllib_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-network-common_2.11\2.4.8\spark-network-common_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-network-shuffle_2.11\2.4.8\spark-network-shuffle_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-sketch_2.11\2.4.8\spark-sketch_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-sql_2.11\2.4.8\spark-sql_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-streaming_2.11\2.4.8\spark-streaming_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-tags_2.11\2.4.8\spark-tags_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\spark\spark-unsafe_2.11\2.4.8\spark-unsafe_2.11-2.4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\xbean\xbean-asm6-shaded\4.8\xbean-asm6-shaded-4.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\janino\commons-compiler\3.0.16\commons-compiler-3.0.16.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\janino\janino\3.0.16\janino-3.0.16.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\external\aopalliance-repackaged\2.4.0-b34\aopalliance-repackaged-2.4.0-b34.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\external\javax.inject\2.4.0-b34\javax.inject-2.4.0-b34.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\hk2-api\2.4.0-b34\hk2-api-2.4.0-b34.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\hk2-locator\2.4.0-b34\hk2-locator-2.4.0-b34.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\hk2-utils\2.4.0-b34\hk2-utils-2.4.0-b34.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.22.2\jersey-guava-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\containers\jersey-container-servlet-core\2.22.2\jersey-container-servlet-core-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\containers\jersey-container-servlet\2.22.2\jersey-container-servlet-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\core\jersey-client\2.22.2\jersey-client-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\core\jersey-common\2.22.2\jersey-common-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\core\jersey-server\2.22.2\jersey-server-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\glassfish\jersey\media\jersey-media-jaxb\2.22.2\jersey-media-jaxb-2.22.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\json4s\json4s-ast_2.11\3.5.3\json4s-ast_2.11-3.5.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\json4s\json4s-core_2.11\3.5.3\json4s-core_2.11-3.5.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\json4s\json4s-jackson_2.11\3.5.3\json4s-jackson_2.11-3.5.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\json4s\json4s-scalap_2.11\3.5.3\json4s-scalap_2.11-3.5.3.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\json\json\20090211\json-20090211.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\lz4\lz4-java\1.4.0\lz4-java-1.4.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mortbay\jetty\jetty-sslengine\6.1.26\jetty-sslengine-6.1.26.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\roaringbitmap\RoaringBitmap\0.7.45\RoaringBitmap-0.7.45.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\roaringbitmap\shims\0.7.45\shims-0.7.45.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-parser-combinators_2.11\1.1.0\scala-parser-combinators_2.11-1.1.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-xml_2.11\1.0.6\scala-xml_2.11-1.0.6.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.11.12\scala-reflect-2.11.12.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalafx\scalafx_2.11\8.0.92-R10\scalafx_2.11-8.0.92-R10.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalanlp\breeze-macros_2.11\0.13.2\breeze-macros_2.11-0.13.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalanlp\breeze_2.11\0.13.2\breeze_2.11-0.13.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalaz\scalaz-core_2.11\7.1.1\scalaz-core_2.11-7.1.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\jcl-over-slf4j\1.7.16\jcl-over-slf4j-1.7.16.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\jul-to-slf4j\1.7.16\jul-to-slf4j-1.7.16.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\spark-project\spark\unused\1.0.0\unused-1.0.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\spire-math\jawn-parser_2.11\0.10.4\jawn-parser_2.11-0.10.4.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\spire-math\spire-macros_2.11\0.13.0\spire-macros_2.11-0.13.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\spire-math\spire_2.11\0.13.0\spire_2.11-0.13.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\tukaani\xz\1.5\xz-1.5.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-core_2.11\0.9.0\cats-core_2.11-0.9.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-kernel_2.11\0.9.0\cats-kernel_2.11-0.9.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\cats-macros_2.11\0.9.0\cats-macros_2.11-0.9.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\machinist_2.11\0.6.1\machinist_2.11-0.6.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\typelevel\macro-compat_2.11\1.1.1\macro-compat_2.11-1.1.1.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\vegas-viz\vegas-macros_2.11\0.3.11\vegas-macros_2.11-0.3.11.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\vegas-viz\vegas-spark_2.11\0.3.11\vegas-spark_2.11-0.3.11.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\vegas-viz\vegas_2.11\0.3.11\vegas_2.11-0.3.11.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\webjars\bower\vega-lite\1.2.0\vega-lite-1.2.0.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\webjars\bower\vega\3.0.0-rc4\vega-3.0.0-rc4.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\xerial\snappy\snappy-java\1.1.8.2\snappy-java-1.1.8.2.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\romain.capocasa\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\xmlenc\xmlenc\0.52\xmlenc-0.52.jar" RunGeoTime
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+21/06/09 10:11:42 INFO SparkContext: Running Spark version 2.4.8
+21/06/09 10:11:42 WARN Shell: Did not find winutils.exe: {}
+java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+	at org.apache.hadoop.util.Shell.fileNotFoundException(Shell.java:528)
+	at org.apache.hadoop.util.Shell.getHadoopHomeDir(Shell.java:549)
+	at org.apache.hadoop.util.Shell.getQualifiedBin(Shell.java:572)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:669)
+	at org.apache.hadoop.util.StringUtils.<clinit>(StringUtils.java:79)
+	at org.apache.hadoop.conf.Configuration.getBoolean(Configuration.java:1445)
+	at org.apache.hadoop.security.SecurityUtil.getLogSlowLookupsEnabled(SecurityUtil.java:497)
+	at org.apache.hadoop.security.SecurityUtil.<clinit>(SecurityUtil.java:90)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:288)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:276)
+	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:832)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:802)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:675)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422)
+	at org.apache.spark.util.Utils$$anonfun$getCurrentUserName$1.apply(Utils.scala:2422)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.util.Utils$.getCurrentUserName(Utils.scala:2422)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:293)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2526)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:930)
+	at org.apache.spark.sql.SparkSession$Builder$$anonfun$7.apply(SparkSession.scala:921)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:921)
+	at RunGeoTime$.main(RunGeoTime.scala:65)
+	at RunGeoTime.main(RunGeoTime.scala)
+Caused by: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset.
+	at org.apache.hadoop.util.Shell.checkHadoopHomeInner(Shell.java:448)
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:419)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:496)
+	... 21 more
+21/06/09 10:11:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21/06/09 10:11:42 INFO SparkContext: Submitted application: BDA
+21/06/09 10:11:42 INFO SecurityManager: Changing view acls to: romain.capocasa
+21/06/09 10:11:42 INFO SecurityManager: Changing modify acls to: romain.capocasa
+21/06/09 10:11:42 INFO SecurityManager: Changing view acls groups to: 
+21/06/09 10:11:42 INFO SecurityManager: Changing modify acls groups to: 
+21/06/09 10:11:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(romain.capocasa); groups with view permissions: Set(); users  with modify permissions: Set(romain.capocasa); groups with modify permissions: Set()
+21/06/09 10:11:44 INFO Utils: Successfully started service 'sparkDriver' on port 53480.
+21/06/09 10:11:44 INFO SparkEnv: Registering MapOutputTracker
+21/06/09 10:11:44 INFO SparkEnv: Registering BlockManagerMaster
+21/06/09 10:11:44 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21/06/09 10:11:44 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21/06/09 10:11:44 INFO DiskBlockManager: Created local directory at C:\Users\romain.capocasa\AppData\Local\Temp\blockmgr-d8118c2a-e00d-47d0-9c9b-6778e78e212f
+21/06/09 10:11:44 INFO MemoryStore: MemoryStore started with capacity 1997.1 MB
+21/06/09 10:11:44 INFO SparkEnv: Registering OutputCommitCoordinator
+21/06/09 10:11:44 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21/06/09 10:11:44 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://host.docker.internal:4040
+21/06/09 10:11:44 INFO Executor: Starting executor ID driver on host localhost
+21/06/09 10:11:44 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53523.
+21/06/09 10:11:44 INFO NettyBlockTransferService: Server created on host.docker.internal:53523
+21/06/09 10:11:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21/06/09 10:11:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, host.docker.internal, 53523, None)
+21/06/09 10:11:44 INFO BlockManagerMasterEndpoint: Registering block manager host.docker.internal:53523 with 1997.1 MB RAM, BlockManagerId(driver, host.docker.internal, 53523, None)
+21/06/09 10:11:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, host.docker.internal, 53523, None)
+21/06/09 10:11:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, host.docker.internal, 53523, None)
+Taxi clean : 
++-----------------------+--------+
+|UDF(dropoffX, dropoffY)|   count|
++-----------------------+--------+
+|                 Queens|  672192|
+|                     NA|  339037|
+|               Brooklyn|  715252|
+|          Staten Island|    3338|
+|              Manhattan|12979047|
+|                  Bronx|   67434|
++-----------------------+--------+
+
+Taxi done : 
++-----------------------+--------+
+|UDF(dropoffX, dropoffY)|   count|
++-----------------------+--------+
+|                 Queens|  670912|
+|                     NA|   62778|
+|               Brooklyn|  714659|
+|          Staten Island|    3333|
+|              Manhattan|12971314|
+|                  Bronx|   67333|
++-----------------------+--------+
+
+Borough duration : 
++-------------+------------------+--------------------+
+|      borough|      avg(seconds)|stddev_samp(seconds)|
++-------------+------------------+--------------------+
+|       Queens| 15145.02921535893|   46184.65570022602|
+|           NA| 11145.50690421012|   41062.38476837451|
+|     Brooklyn|10924.258102953178|   40079.37390372924|
+|Staten Island| 17012.34120171674|  41266.189555996105|
+|    Manhattan| 3441.172764592876|   22029.98741240281|
+|        Bronx|13846.641869522882|   41205.83813202717|
++-------------+------------------+--------------------+
+
+Quantile 5% : 60.0
+Potential conflicts by license : 
++--------------------+-----+
+|             license|count|
++--------------------+-----+
+|CA7B1AB1DD9418621...|  143|
+|BE8434549C883CD77...|  131|
+|3D757E111C78F5CAC...|  121|
+|2C4FC3111A8836BAF...|  120|
+|F2DC60A855AA8F516...|  119|
+|A430D0FDACEF94FC9...|  108|
+|217622C8CAF6C45CB...|  107|
+|7F95B1590B7DA7B13...|  106|
+|C217861C15053A93B...|  105|
+|314466DCAC0F3733D...|  104|
+|EAEFF350F3781E726...|  101|
+|48904C3579CAFCA72...|  101|
+|C4AE0FD3638CFA517...|  100|
+|3745927B491B2641A...|  100|
+|20971C5254D64D6BD...|   99|
+|8911EE2D1419D3607...|   99|
+|559EDA2B1D3A352F1...|   99|
+|7920E766CD2EAC5DA...|   98|
+|C69A4B47D47EBDB44...|   98|
+|3F4E3506DB8F6F9DD...|   97|
++--------------------+-----+
+only showing top 20 rows
+
+All potential conflict: 413654
+Potential conflict by borough : 
++-------------+------+
+|      borough| count|
++-------------+------+
+|       Queens|  5241|
+|           NA|   780|
+|     Brooklyn|  5802|
+|Staten Island|     6|
+|    Manhattan|401587|
+|        Bronx|   238|
++-------------+------+
+
+Mean of tip amount : 1.2630700055188528
+Baseline RMSE : 2.019734868621055
+Baseline MAE : 1.3081345132729219
+Tips bucket start values : [D@3bf1a4c
+Tips bucket bin values : [J@7b81283
+Bucketized tips : 
++------------------+------------------+---------+---------+
+|          dropoffX|          dropoffY|tipAmount|tipBucket|
++------------------+------------------+---------+---------+
+|        -73.956017|         40.777859|      6.9|      5.0|
+|         -73.96463|         40.792645|      0.0|      0.0|
+|        -73.977577|40.758410999999995|      1.5|      1.0|
+|        -73.984787|         40.757576|      0.0|      0.0|
+|-73.98628199999999|         40.757427|      0.0|      0.0|
+|        -73.963448|         40.757545|      0.0|      0.0|
+|        -73.978951|         40.750103|      0.0|      0.0|
+|        -73.961311|         40.779491|      0.0|      0.0|
+|-74.00455500000001|40.742309999999996|      0.0|      0.0|
+|        -73.978249|         40.742432|      1.7|      1.0|
+|        -73.991753|40.722491999999995|      1.0|      0.0|
+|        -74.002312|         40.733269|      0.0|      0.0|
+|        -73.943733|         40.776691|      0.0|      0.0|
+|        -73.983902|         40.759289|      0.0|      0.0|
+|        -73.993057|         40.750633|      0.0|      0.0|
+|        -73.973015|         40.754036|      0.0|      0.0|
+|-73.95111800000001|         40.772591|      2.4|      1.0|
+|        -73.967667|         40.763031|      1.0|      0.0|
+|        -73.977112|40.743010999999996|     2.55|      1.0|
+|        -73.974998|         40.792797|      5.5|      4.0|
++------------------+------------------+---------+---------+
+only showing top 20 rows
+
+Train data : 
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+----------+
+|             license|   pickupTime|  dropoffTime|           pickupX|           pickupY|          dropoffX|          dropoffY|vendorId|tripTimeSecs|tripDistance|passengerCount|paymentType|surcharge|tipAmount|totalAmount|hour|weekday|dropoffBorough|pickupBorough|fareAmount|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+----------+
+|001EEDEA00E57988E...|1357133131000|1357133620000|-73.95326999999999|         40.776077|         -73.96463|         40.792645|     CMT|         488|         1.8|             1|        CSH|      0.0|      0.0|        9.0|  10|    Thu|     Manhattan|    Manhattan|       9.0|
+|001EEDEA00E57988E...|1357134066000|1357134620000|-73.96392800000001|          40.77663|        -73.977577|40.758410999999995|     CMT|         553|         1.4|             1|        CRD|      0.0|      1.5|       10.0|  06|    Mon|     Manhattan|    Manhattan|       8.5|
+|001EEDEA00E57988E...|1357134717000|1357135122000|        -73.977577|         40.758408|        -73.984787|         40.757576|     CMT|         404|         0.5|             3|        CSH|      0.0|      0.0|        6.5|  18|    Mon|     Manhattan|    Manhattan|       6.5|
+|001EEDEA00E57988E...|1357136555000|1357137231000|        -73.990234|         40.755203|        -73.963448|         40.757545|     CMT|         676|         1.9|             2|        CSH|      0.0|      0.0|       10.5|  01|    Tue|     Manhattan|    Manhattan|      10.5|
+|001EEDEA00E57988E...|1357138642000|1357139454000|         -73.97654|         40.757404|        -73.961311|         40.779491|     CMT|         812|         2.3|             2|        CSH|      0.0|      0.0|       11.5|  05|    Fri|     Manhattan|    Manhattan|      11.5|
+|001EEDEA00E57988E...|1357139617000|1357140644000|        -73.962151|         40.779392|-74.00455500000001|40.742309999999996|     CMT|        1027|         4.0|             1|        CSH|      1.0|      0.0|       17.0|  11|    Tue|     Manhattan|    Manhattan|      17.0|
+|001EEDEA00E57988E...|1357141055000|1357141426000|-73.99736800000001|         40.736553|        -73.978249|         40.742432|     CMT|         371|         1.5|             1|        CRD|      1.0|      1.7|       10.2|  03|    Fri|     Manhattan|    Manhattan|       8.5|
+|001EEDEA00E57988E...|1357142146000|1357142596000|         -73.99221|         40.721581|        -74.002312|         40.733269|     CMT|         450|         1.4|             1|        CSH|      1.0|      0.0|        9.0|  18|    Wed|     Manhattan|    Manhattan|       9.0|
+|001EEDEA00E57988E...|1357142745000|1357143982000|        -73.999161|         40.734306|        -73.943733|         40.776691|     CMT|        1237|         5.1|             1|        CSH|      1.0|      0.0|       19.5|  16|    Wed|     Manhattan|    Manhattan|      19.5|
+|001EEDEA00E57988E...|1357145690000|1357146270000|        -73.993057|         40.750633|        -73.973015|         40.754036|     CMT|         580|         1.5|             3|        CSH|      1.0|      0.0|        9.5|  18|    Tue|     Manhattan|    Manhattan|       9.5|
+|001EEDEA00E57988E...|1357148923000|1357149368000|        -73.970184|         40.759552|        -73.977112|40.743010999999996|     CMT|         445|         1.4|             3|        CRD|      1.0|     2.55|      11.05|  05|    Fri|     Manhattan|    Manhattan|       8.5|
+|001EEDEA00E57988E...|1357207235000|1357208791000|-73.98281899999999|         40.723068|        -73.974998|         40.792797|     CMT|        1555|         7.7|             1|        CRD|      0.0|      5.5|       33.0|  02|    Mon|     Manhattan|    Manhattan|      27.5|
+|001EEDEA00E57988E...|1357209451000|1357209849000|        -73.976151|         40.776333|        -73.961662|         40.774361|     CMT|         397|         1.4|             1|        CSH|      0.0|      0.0|        7.5|  19|    Fri|     Manhattan|    Manhattan|       7.5|
+|001EEDEA00E57988E...|1357211898000|1357213500000|-73.93291500000001|         40.763866|-73.98782299999999|40.688041999999996|     CMT|        1601|         9.3|             1|        CRD|      0.0|      6.0|       36.0|  03|    Sat|      Brooklyn|       Queens|      30.0|
+|001EEDEA00E57988E...|1357213632000|1357214971000|        -73.989464|         40.690811|        -73.956032|         40.774761|     CMT|        1339|         8.3|             1|        CRD|      0.0|     6.75|      33.75|  04|    Fri|     Manhattan|     Brooklyn|      27.0|
+|001EEDEA00E57988E...|1357219075000|1357220122000|-73.87086500000001|         40.773685|        -73.953644|         40.775154|     CMT|        1046|         8.1|             1|        CRD|      0.0|     7.45|      37.25|  04|    Fri|     Manhattan|       Queens|      29.8|
+|001EEDEA00E57988E...|1357220208000|1357220621000|        -73.953743|40.775104999999996|        -73.966652|40.769783000000004|     CMT|         413|         1.0|             2|        CSH|      0.0|      0.0|        7.0|  07|    Thu|     Manhattan|    Manhattan|       7.0|
+|001EEDEA00E57988E...|1357220800000|1357221496000|        -73.969696|         40.768673|         -73.97686|         40.754944|     CMT|         696|         1.1|             1|        CRD|      0.0|      1.0|       10.0|  03|    Thu|     Manhattan|    Manhattan|       9.0|
+|001EEDEA00E57988E...|1357222059000|1357222321000|        -73.981346|         40.747269|-73.97711899999999|40.742020000000004|     CMT|         262|         0.6|             2|        CSH|      0.0|      0.0|        5.5|  17|    Thu|     Manhattan|    Manhattan|       5.5|
+|001EEDEA00E57988E...|1357222476000|1357223279000|         -73.97451|         40.742344|        -73.994461|         40.750202|     CMT|         803|         1.3|             1|        CSH|      0.0|      0.0|       10.0|  13|    Tue|     Manhattan|    Manhattan|      10.0|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+----------+
+only showing top 20 rows
+
+21/06/09 10:22:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+21/06/09 10:22:34 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+21/06/09 10:22:41 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+21/06/09 10:22:41 WARN LAPACK: Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.03905
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.446666 (rel: 0.107) 1.05728
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.246359 (rel: 0.448) 0.126341
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.243205 (rel: 0.0128) 0.0538875
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.241762 (rel: 0.00593) 0.0417547
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.239693 (rel: 0.00856) 0.0498754
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.238267 (rel: 0.00595) 0.0655212
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237655 (rel: 0.00257) 0.0171062
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237485 (rel: 0.000718) 0.0259376
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237372 (rel: 0.000473) 0.0108115
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237247 (rel: 0.000528) 0.0207414
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237086 (rel: 0.000681) 0.0139986
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.237071 (rel: 6.15e-05) 0.0181465
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236982 (rel: 0.000376) 0.00750278
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236965 (rel: 7.18e-05) 0.00523891
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236957 (rel: 3.14e-05) 0.00752878
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236943 (rel: 6.16e-05) 0.00377632
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236941 (rel: 9.23e-06) 0.00589516
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236932 (rel: 3.44e-05) 0.00340438
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236929 (rel: 1.54e-05) 0.00308331
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236926 (rel: 9.56e-06) 0.00261479
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236925 (rel: 5.87e-06) 0.00413641
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236921 (rel: 1.69e-05) 0.00194434
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236919 (rel: 7.80e-06) 0.00151120
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236913 (rel: 2.52e-05) 0.00149048
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236895 (rel: 7.50e-05) 0.00419670
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236890 (rel: 2.15e-05) 0.00224675
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236890 (rel: 2.57e-06) 0.00252471
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236888 (rel: 6.95e-06) 0.00161830
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236888 (rel: 1.23e-06) 0.00184429
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236887 (rel: 3.84e-06) 0.00115022
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236887 (rel: 5.67e-07) 0.00135908
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.10e-06) 0.000828388
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.51e-07) 0.000993818
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.12e-06) 0.000596863
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.53e-07) 0.000703319
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 6.69e-07) 0.000356424
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.27e-08) 0.000506328
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.45e-07) 0.000249350
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.11e-08) 0.000375802
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.93e-07) 0.000179654
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.26e-08) 0.000285146
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.13e-07) 0.000140834
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 9.37e-09) 0.000225202
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 7.07e-08) 0.000107542
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 6.51e-09) 0.000171190
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.42e-08) 0.000101661
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.62e-09) 0.000128007
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.90e-08) 7.68166e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.01e-09) 8.91356e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 9.33e-09) 5.35310e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.58e-09) 6.13307e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.57e-09) 3.44474e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 5.60e-10) 4.25928e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.24e-09) 2.15699e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.57e-10) 2.94100e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.08e-09) 1.35478e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.69e-10) 7.39054e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 5.29e-10) 1.67175e-05
+21/06/09 10:24:55 INFO OWLQN: Step Size: 1.000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 5.07e-10) 5.61362e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 9.06e-12) 5.87067e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.36e-11) 3.71140e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.77e-12) 5.05402e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.07e-11) 3.49077e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.84e-12) 4.52498e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.35e-11) 3.24987e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.65e-12) 4.01804e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.75e-11) 3.00369e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.08e-12) 3.59487e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 7.39e-12) 4.17834e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.02e-11) 2.65129e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.99e-12) 3.41495e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.43e-11) 2.25640e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.85e-12) 2.81894e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.01e-11) 2.04899e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.26e-12) 2.41680e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 7.96e-12) 1.84756e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.42e-12) 2.07551e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 6.37e-12) 1.61591e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.11e-12) 1.65948e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 4.50e-12) 1.26084e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.92e-12) 1.13256e-06
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 2.35e-12) 7.90839e-07
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 1.32e-12) 5.94921e-07
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 7.47e-13) 3.63773e-07
+21/06/09 10:24:55 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:24:55 INFO OWLQN: Val and Grad Norm: 0.236886 (rel: 3.30e-13) 2.11717e-07
+21/06/09 10:24:55 INFO OWLQN: Converged because gradient converged
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03905
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.452673 (rel: 0.0947) 0.998754
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.268368 (rel: 0.407) 0.131516
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.265079 (rel: 0.0123) 0.0605417
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.263079 (rel: 0.00754) 0.0448620
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.259435 (rel: 0.0139) 0.0387490
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.258755 (rel: 0.00262) 0.0602620
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.258484 (rel: 0.00105) 0.0223964
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.258270 (rel: 0.000829) 0.0473090
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.258052 (rel: 0.000842) 0.0174118
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257870 (rel: 0.000707) 0.0367128
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257677 (rel: 0.000748) 0.0135104
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257501 (rel: 0.000682) 0.0261538
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257393 (rel: 0.000420) 0.0239362
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257167 (rel: 0.000880) 0.0163725
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.257134 (rel: 0.000127) 0.0247283
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256974 (rel: 0.000622) 0.0174058
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256883 (rel: 0.000355) 0.00840789
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256860 (rel: 8.89e-05) 0.00243204
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256853 (rel: 2.75e-05) 0.00191122
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256844 (rel: 3.59e-05) 0.00253002
+21/06/09 10:25:24 INFO OWLQN: Step Size: 1.000
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256803 (rel: 0.000161) 0.00393172
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256800 (rel: 9.69e-06) 0.00566876
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256788 (rel: 4.68e-05) 0.00340948
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256787 (rel: 5.12e-06) 0.00551315
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256775 (rel: 4.45e-05) 0.00325860
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256774 (rel: 4.38e-06) 0.00537754
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256763 (rel: 4.24e-05) 0.00313241
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256762 (rel: 3.86e-06) 0.00523792
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256752 (rel: 4.03e-05) 0.00301705
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256751 (rel: 3.06e-06) 0.00515615
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.03125
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256741 (rel: 3.84e-05) 0.00311547
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256739 (rel: 9.22e-06) 0.00430970
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256732 (rel: 2.85e-05) 0.00288463
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256730 (rel: 7.83e-06) 0.00420855
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256723 (rel: 2.73e-05) 0.00267717
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256721 (rel: 6.37e-06) 0.00415668
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256714 (rel: 2.62e-05) 0.00252979
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256713 (rel: 5.24e-06) 0.00409900
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256706 (rel: 2.53e-05) 0.00239192
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256705 (rel: 4.34e-06) 0.00402139
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256699 (rel: 2.43e-05) 0.00228130
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256698 (rel: 3.59e-06) 0.00394241
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256692 (rel: 2.34e-05) 0.00218920
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256691 (rel: 2.95e-06) 0.00386789
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256686 (rel: 2.24e-05) 0.00209765
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256685 (rel: 2.54e-06) 0.00376975
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256680 (rel: 2.12e-05) 0.00202428
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256679 (rel: 2.27e-06) 0.00366617
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256674 (rel: 2.01e-05) 0.00195947
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256673 (rel: 2.10e-06) 0.00355625
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256668 (rel: 1.89e-05) 0.00189812
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256668 (rel: 1.96e-06) 0.00344837
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256663 (rel: 1.78e-05) 0.00183884
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256663 (rel: 1.82e-06) 0.00334608
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256659 (rel: 1.68e-05) 0.00178554
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256658 (rel: 1.73e-06) 0.00324361
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256654 (rel: 1.58e-05) 0.00173544
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256654 (rel: 1.65e-06) 0.00314360
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256650 (rel: 1.49e-05) 0.00168748
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256649 (rel: 1.57e-06) 0.00304678
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256646 (rel: 1.40e-05) 0.00164080
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256645 (rel: 1.51e-06) 0.00295328
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256642 (rel: 1.31e-05) 0.00159521
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256642 (rel: 1.44e-06) 0.00286287
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256639 (rel: 1.23e-05) 0.00155075
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256638 (rel: 1.37e-06) 0.00277579
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256635 (rel: 1.16e-05) 0.00150699
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256635 (rel: 1.31e-06) 0.00269209
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256632 (rel: 1.09e-05) 0.00146386
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256632 (rel: 1.24e-06) 0.00261157
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256629 (rel: 1.03e-05) 0.00142141
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256629 (rel: 1.18e-06) 0.00253403
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256626 (rel: 9.69e-06) 0.00137973
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256626 (rel: 1.11e-06) 0.00245924
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256624 (rel: 9.13e-06) 0.00133892
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256623 (rel: 1.05e-06) 0.00238701
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256621 (rel: 8.60e-06) 0.00129903
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256621 (rel: 9.84e-07) 0.00231714
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256619 (rel: 8.10e-06) 0.00126015
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256619 (rel: 9.24e-07) 0.00224944
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256617 (rel: 7.64e-06) 0.00122232
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256616 (rel: 8.67e-07) 0.00218376
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256615 (rel: 7.20e-06) 0.00118559
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256614 (rel: 8.14e-07) 0.00211995
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256613 (rel: 6.79e-06) 0.00114996
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256612 (rel: 7.63e-07) 0.00205793
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256611 (rel: 6.40e-06) 0.00111544
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256611 (rel: 7.17e-07) 0.00199759
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256609 (rel: 6.03e-06) 0.00108199
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256609 (rel: 6.73e-07) 0.00193889
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256607 (rel: 5.68e-06) 0.00104961
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256607 (rel: 6.31e-07) 0.00188238
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256606 (rel: 5.35e-06) 0.00101795
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256606 (rel: 5.90e-07) 0.00182768
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256604 (rel: 5.04e-06) 0.000987042
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256604 (rel: 5.52e-07) 0.00177462
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256603 (rel: 4.75e-06) 0.000956861
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256603 (rel: 5.15e-07) 0.00172318
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256602 (rel: 4.48e-06) 0.000927399
+21/06/09 10:25:24 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:25:24 INFO OWLQN: Val and Grad Norm: 0.256602 (rel: 4.79e-07) 0.00167331
+21/06/09 10:25:24 INFO OWLQN: Converged because max iterations reached
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.03902
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.452644 (rel: 0.0947) 0.999401
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.268118 (rel: 0.408) 0.131634
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.264820 (rel: 0.0123) 0.0606588
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.262812 (rel: 0.00758) 0.0448676
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.259194 (rel: 0.0138) 0.0393175
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.258458 (rel: 0.00284) 0.0598521
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.258182 (rel: 0.00107) 0.0218620
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257961 (rel: 0.000855) 0.0465637
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257738 (rel: 0.000865) 0.0167598
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257549 (rel: 0.000734) 0.0352841
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257347 (rel: 0.000783) 0.0131771
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257282 (rel: 0.000252) 0.0434604
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.257083 (rel: 0.000776) 0.0224751
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256886 (rel: 0.000764) 0.0178084
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256784 (rel: 0.000398) 0.0190910
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256710 (rel: 0.000288) 0.0198017
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256586 (rel: 0.000483) 0.00889417
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256560 (rel: 0.000103) 0.00334607
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256557 (rel: 1.25e-05) 0.00414458
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256552 (rel: 1.96e-05) 0.00342845
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256550 (rel: 5.85e-06) 0.00466015
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256548 (rel: 8.30e-06) 0.00353833
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256544 (rel: 1.70e-05) 0.00190880
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256543 (rel: 1.33e-06) 0.00266425
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256542 (rel: 4.32e-06) 0.00231950
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256540 (rel: 7.66e-06) 0.00300081
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256538 (rel: 1.05e-05) 0.00221433
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256532 (rel: 2.13e-05) 0.00272391
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256519 (rel: 5.08e-05) 0.00204988
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256460 (rel: 0.000229) 0.00189871
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 0.000737) 0.00114729
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.25e-07) 0.000971572
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.66e-07) 0.000837433
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.23e-07) 0.000587298
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.87e-07) 0.000281902
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.49e-08) 0.000236956
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 5.21e-08) 0.000128175
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 6.70e-09) 0.000115738
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 5.16e-09) 0.000175865
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.17e-08) 6.55385e-05
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.42e-08) 4.98870e-05
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.48e-08) 1.71338e-05
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.80e-09) 1.16232e-05
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.5000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 5.71e-11) 1.23916e-05
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.31e-10) 5.60152e-06
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.81e-11) 2.45672e-06
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 5.68e-12) 1.19305e-06
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.74e-12) 5.97925e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 6.08e-13) 3.41176e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 4.410
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.88e-12) 2.98563e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.26e-11) 1.40603e-06
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.2500
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.64e-12) 7.22722e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 3.05e-13) 5.73342e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 7.47e-14) 6.05456e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.07e-13) 4.91802e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 6.07e-14) 5.11968e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.42e-13) 4.23115e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 5.20e-14) 4.30636e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 9.03e-14) 3.71481e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 6.07e-14) 3.42516e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 0.1250
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 2.51e-14) 3.52858e-07
+21/06/09 10:36:45 INFO OWLQN: Step Size: 1.000
+21/06/09 10:36:45 INFO OWLQN: Val and Grad Norm: 0.256271 (rel: 1.31e-13) 1.13112e-07
+21/06/09 10:36:45 INFO OWLQN: Converged because gradient converged
+Linear regression prediction : 
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+-------------------+
+|             license|   pickupTime|  dropoffTime|           pickupX|           pickupY|          dropoffX|          dropoffY|vendorId|tripTimeSecs|tripDistance|passengerCount|paymentType|surcharge|tipAmount|totalAmount|hour|weekday|dropoffBorough|pickupBorough|        fareAmount|            features|label|         prediction|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+-------------------+
+|001EEDEA00E57988E...|1357131151000|1357132942000|        -73.781952|40.644690999999995|        -73.956017|         40.777859|     CMT|        1791|        19.4|             2|        CRD|      0.0|      6.9|       64.2|  13|    Tue|     Manhattan|       Queens|57.300000000000004|(48,[0,1,2,3,4,20...|  6.9|  6.141851035706906|
+|001EEDEA00E57988E...|1357135957000|1357136438000|        -73.974373|         40.762669|-73.98628199999999|         40.757427|     CMT|         481|         0.9|             1|        CSH|      0.0|      0.0|        7.5|  03|    Tue|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,5,25...|  0.0|                0.0|
+|001EEDEA00E57988E...|1357137347000|1357138300000|        -73.962509|40.758858000000004|        -73.978951|         40.750103|     CMT|         953|         2.0|             1|        CSH|      0.0|      0.0|       11.5|  05|    Thu|     Manhattan|    Manhattan|              11.5|(48,[0,1,2,3,5,26...|  0.0|0.09590467244361867|
+|001EEDEA00E57988E...|1357141538000|1357142076000|        -73.978661|         40.741219|        -73.991753|40.722491999999995|     CMT|         538|         1.5|             1|        CRD|      1.0|      1.0|       11.0|  17|    Wed|     Manhattan|    Manhattan|              10.0|(48,[0,1,2,3,4,29...|  1.0| 1.9970430839097277|
+|001EEDEA00E57988E...|1357144094000|1357145055000|        -73.944138|         40.775745|        -73.983902|         40.759289|     CMT|         961|         2.9|             3|        CSH|      1.0|      0.0|       14.5|  07|    Fri|     Manhattan|    Manhattan|              14.5|(48,[0,1,2,3,5,30...|  0.0|0.35869434192339955|
+|001EEDEA00E57988E...|1357145191000|1357145647000|        -73.985008|         40.760376|        -73.993057|         40.750633|     CMT|         455|         0.8|             2|        CSH|      1.0|      0.0|        8.0|  00|    Thu|     Manhattan|    Manhattan|               8.0|(48,[0,1,2,3,5,8,...|  0.0|                0.0|
+|001EEDEA00E57988E...|1357147387000|1357148165000|-73.97470899999999|          40.75703|-73.95111800000001|         40.772591|     CMT|         777|         2.0|             2|        CRD|      1.0|      2.4|       14.4|  11|    Mon|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,22...|  2.4|  2.172196012808217|
+|001EEDEA00E57988E...|1357148256000|1357148747000|        -73.950172|         40.771957|        -73.967667|         40.763031|     CMT|         490|         1.5|             1|        CRD|      1.0|      1.0|       10.0|  12|    Thu|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,18...|  1.0| 1.9095670796805617|
+|001EEDEA00E57988E...|1357225728000|1357226571000|        -73.975204|         40.749825|-73.97513599999999|         40.765182|     CMT|         842|         1.5|             1|        CRD|      1.0|      2.4|       14.4|  04|    Fri|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,12...|  2.4|   2.17199509236806|
+|001EEDEA00E57988E...|1357226717000|1357227526000|        -73.973015|         40.763481|        -73.991653|40.750378000000005|     CMT|         808|         1.9|             1|        CRD|      1.0|      3.0|       15.0|  15|    Tue|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,24...|  3.0|  2.172155828720186|
+|001EEDEA00E57988E...|1357229024000|1357229518000|        -73.970116|         40.762562|        -73.984337|40.745895000000004|     CMT|         493|         1.5|             2|        CRD|      1.0|      0.0|        9.0|  07|    Mon|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,30...|  0.0| 1.9095670796805617|
+|001EEDEA00E57988E...|1357229636000|1357230601000|        -73.986137|         40.745983|        -73.955322|40.764534000000005|     CMT|         965|         2.7|             2|        CRD|      1.0|      2.5|       16.5|  09|    Mon|     Manhattan|    Manhattan|              14.0|(48,[0,1,2,3,4,21...|  2.5|  2.347429309882769|
+|001EEDEA00E57988E...|1357231760000|1357232141000|        -73.969841|         40.768562|        -73.982376|         40.768299|     CMT|         381|         0.9|             2|        CSH|      1.0|      0.0|        7.5|  23|    Thu|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,5,23...|  0.0|                0.0|
+|001EEDEA00E57988E...|1357233740000|1357234118000|        -73.987122|         40.741894|        -73.991051|         40.748604|     CMT|         378|         0.7|             1|        CRD|      1.0|      1.5|        9.0|  21|    Sat|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,4,27...|  1.5| 1.7780316006325614|
+|001EEDEA00E57988E...|1357234573000|1357235146000|         -73.98526|         40.750725|        -73.998016|         40.733627|     CMT|         573|         1.7|             1|        CSH|      1.0|      0.0|       10.0|  12|    Tue|     Manhattan|    Manhattan|              10.0|(48,[0,1,2,3,5,18...|  0.0|                0.0|
+|001EEDEA00E57988E...|1357240460000|1357240904000|        -73.971466|         40.751045|        -73.991325|40.723296999999995|     CMT|         443|         2.2|             1|        CSH|      0.5|      0.0|        9.5|  16|    Sun|     Manhattan|    Manhattan|               9.5|(48,[0,1,2,3,5,15...|  0.0|                0.0|
+|001EEDEA00E57988E...|1357285735000|1357288006000|        -73.870689|         40.773457|-73.98419200000001|40.767272999999996|     CMT|        2270|        11.1|             1|        CRD|      0.0|      5.0|       46.8|  17|    Sat|     Manhattan|       Queens|              41.8|(48,[0,1,2,3,4,29...|  5.0|  4.782637690848225|
+|001EEDEA00E57988E...|1357289150000|1357290500000|        -73.955894|         40.772381|        -74.004532|40.742065000000004|     CMT|        1350|         4.3|             1|        CRD|      0.0|      3.6|       21.6|  05|    Thu|     Manhattan|    Manhattan|              18.0|(48,[0,1,2,3,4,26...|  3.6|  2.697976272207936|
+|001EEDEA00E57988E...|1357291339000|1357291899000|        -73.999161|         40.754776|         -73.98214|         40.777332|     CMT|         560|         1.8|             1|        CRD|      0.0|      2.7|       11.7|  12|    Mon|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,18...|  2.7| 1.9096876319446556|
+|001EEDEA00E57988E...|1357299887000|1357301161000|        -74.007286|         40.715694|        -73.975883|40.758540999999994|     CMT|        1273|         3.7|             1|        CSH|      0.0|      0.0|       17.0|  11|    Tue|     Manhattan|    Manhattan|              17.0|(48,[0,1,2,3,5,22...|  0.0| 0.5777058252005661|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+-------------------+
+only showing top 20 rows
+
+RMSE : 1.3032129870441562
+MAE : 0.600202843322619
+Random forest prediction : 
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+--------------------+
+|             license|   pickupTime|  dropoffTime|           pickupX|           pickupY|          dropoffX|          dropoffY|vendorId|tripTimeSecs|tripDistance|passengerCount|paymentType|surcharge|tipAmount|totalAmount|hour|weekday|dropoffBorough|pickupBorough|        fareAmount|            features|label|          prediction|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+--------------------+
+|001EEDEA00E57988E...|1357131151000|1357132942000|        -73.781952|40.644690999999995|        -73.956017|         40.777859|     CMT|        1791|        19.4|             2|        CRD|      0.0|      6.9|       64.2|  13|    Tue|     Manhattan|       Queens|57.300000000000004|(48,[0,1,2,3,4,20...|  6.9|   9.353557412282969|
+|001EEDEA00E57988E...|1357135957000|1357136438000|        -73.974373|         40.762669|-73.98628199999999|         40.757427|     CMT|         481|         0.9|             1|        CSH|      0.0|      0.0|        7.5|  03|    Tue|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,5,25...|  0.0|3.199101126962069...|
+|001EEDEA00E57988E...|1357137347000|1357138300000|        -73.962509|40.758858000000004|        -73.978951|         40.750103|     CMT|         953|         2.0|             1|        CSH|      0.0|      0.0|       11.5|  05|    Thu|     Manhattan|    Manhattan|              11.5|(48,[0,1,2,3,5,26...|  0.0|2.927039346233121E-4|
+|001EEDEA00E57988E...|1357141538000|1357142076000|        -73.978661|         40.741219|        -73.991753|40.722491999999995|     CMT|         538|         1.5|             1|        CRD|      1.0|      1.0|       11.0|  17|    Wed|     Manhattan|    Manhattan|              10.0|(48,[0,1,2,3,4,29...|  1.0|  1.7005274573044127|
+|001EEDEA00E57988E...|1357144094000|1357145055000|        -73.944138|         40.775745|        -73.983902|         40.759289|     CMT|         961|         2.9|             3|        CSH|      1.0|      0.0|       14.5|  07|    Fri|     Manhattan|    Manhattan|              14.5|(48,[0,1,2,3,5,30...|  0.0|4.734866691041303E-4|
+|001EEDEA00E57988E...|1357145191000|1357145647000|        -73.985008|         40.760376|        -73.993057|         40.750633|     CMT|         455|         0.8|             2|        CSH|      1.0|      0.0|        8.0|  00|    Thu|     Manhattan|    Manhattan|               8.0|(48,[0,1,2,3,5,8,...|  0.0| 3.66692568735808E-4|
+|001EEDEA00E57988E...|1357147387000|1357148165000|-73.97470899999999|          40.75703|-73.95111800000001|         40.772591|     CMT|         777|         2.0|             2|        CRD|      1.0|      2.4|       14.4|  11|    Mon|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,22...|  2.4|  1.8829985595064147|
+|001EEDEA00E57988E...|1357148256000|1357148747000|        -73.950172|         40.771957|        -73.967667|         40.763031|     CMT|         490|         1.5|             1|        CRD|      1.0|      1.0|       10.0|  12|    Thu|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,18...|  1.0|  1.6138787293193964|
+|001EEDEA00E57988E...|1357225728000|1357226571000|        -73.975204|         40.749825|-73.97513599999999|         40.765182|     CMT|         842|         1.5|             1|        CRD|      1.0|      2.4|       14.4|  04|    Fri|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,12...|  2.4|   1.865358342188835|
+|001EEDEA00E57988E...|1357226717000|1357227526000|        -73.973015|         40.763481|        -73.991653|40.750378000000005|     CMT|         808|         1.9|             1|        CRD|      1.0|      3.0|       15.0|  15|    Tue|     Manhattan|    Manhattan|              12.0|(48,[0,1,2,3,4,24...|  3.0|   1.908595087511031|
+|001EEDEA00E57988E...|1357229024000|1357229518000|        -73.970116|         40.762562|        -73.984337|40.745895000000004|     CMT|         493|         1.5|             2|        CRD|      1.0|      0.0|        9.0|  07|    Mon|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,30...|  0.0|  1.6153792194406802|
+|001EEDEA00E57988E...|1357229636000|1357230601000|        -73.986137|         40.745983|        -73.955322|40.764534000000005|     CMT|         965|         2.7|             2|        CRD|      1.0|      2.5|       16.5|  09|    Mon|     Manhattan|    Manhattan|              14.0|(48,[0,1,2,3,4,21...|  2.5|   2.577554267100415|
+|001EEDEA00E57988E...|1357231760000|1357232141000|        -73.969841|         40.768562|        -73.982376|         40.768299|     CMT|         381|         0.9|             2|        CSH|      1.0|      0.0|        7.5|  23|    Thu|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,5,23...|  0.0| 3.66692568735808E-4|
+|001EEDEA00E57988E...|1357233740000|1357234118000|        -73.987122|         40.741894|        -73.991051|         40.748604|     CMT|         378|         0.7|             1|        CRD|      1.0|      1.5|        9.0|  21|    Sat|     Manhattan|    Manhattan|               7.5|(48,[0,1,2,3,4,27...|  1.5|  1.4651964945772515|
+|001EEDEA00E57988E...|1357234573000|1357235146000|         -73.98526|         40.750725|        -73.998016|         40.733627|     CMT|         573|         1.7|             1|        CSH|      1.0|      0.0|       10.0|  12|    Tue|     Manhattan|    Manhattan|              10.0|(48,[0,1,2,3,5,18...|  0.0|3.199101126962069...|
+|001EEDEA00E57988E...|1357240460000|1357240904000|        -73.971466|         40.751045|        -73.991325|40.723296999999995|     CMT|         443|         2.2|             1|        CSH|      0.5|      0.0|        9.5|  16|    Sun|     Manhattan|    Manhattan|               9.5|(48,[0,1,2,3,5,15...|  0.0|3.199101126962069...|
+|001EEDEA00E57988E...|1357285735000|1357288006000|        -73.870689|         40.773457|-73.98419200000001|40.767272999999996|     CMT|        2270|        11.1|             1|        CRD|      0.0|      5.0|       46.8|  17|    Sat|     Manhattan|       Queens|              41.8|(48,[0,1,2,3,4,29...|  5.0|   7.407565628720509|
+|001EEDEA00E57988E...|1357289150000|1357290500000|        -73.955894|         40.772381|        -74.004532|40.742065000000004|     CMT|        1350|         4.3|             1|        CRD|      0.0|      3.6|       21.6|  05|    Thu|     Manhattan|    Manhattan|              18.0|(48,[0,1,2,3,4,26...|  3.6|   3.121397449851162|
+|001EEDEA00E57988E...|1357291339000|1357291899000|        -73.999161|         40.754776|         -73.98214|         40.777332|     CMT|         560|         1.8|             1|        CRD|      0.0|      2.7|       11.7|  12|    Mon|     Manhattan|    Manhattan|               9.0|(48,[0,1,2,3,4,18...|  2.7|  1.6498351533824038|
+|001EEDEA00E57988E...|1357299887000|1357301161000|        -74.007286|         40.715694|        -73.975883|40.758540999999994|     CMT|        1273|         3.7|             1|        CSH|      0.0|      0.0|       17.0|  11|    Tue|     Manhattan|    Manhattan|              17.0|(48,[0,1,2,3,5,22...|  0.0| 8.96937915730033E-4|
++--------------------+-------------+-------------+------------------+------------------+------------------+------------------+--------+------------+------------+--------------+-----------+---------+---------+-----------+----+-------+--------------+-------------+------------------+--------------------+-----+--------------------+
+only showing top 20 rows
+
+RMSE : 1.0551913976752616
+MAE : 0.3942736436857447
+Top descending 20 profit : 
++--------------------+------------------+------------+------------------+------------------+------------------+
+|             license|         sumAmount|sumSurcharge|       sumDistance|              cost|              gain|
++--------------------+------------------+------------+------------------+------------------+------------------+
+|847349F8845A667D9...|22275.479999999974|       424.5| 4698.489999999994|3290.5788999999963|18984.901099999977|
+|F153D0336BF48F93E...|21055.589999999997|       476.5| 4448.329999999998| 3189.981299999999|17865.608699999997|
+|2BF7915E6DC625234...|20817.069999999978|       414.5| 4531.599999999999|3178.7759999999994| 17638.29399999998|
+|3AAB94CA53FE93A64...|20261.399999999972|       465.0|3961.4999999999964|2881.5149999999976|17379.884999999973|
+|CE625FD96D0FAFC81...|          19387.17|       469.5|3719.3999999999955| 2738.333999999997|16648.836000000003|
+|3D757E111C78F5CAC...|          19331.81|       444.0| 3672.299999999999| 2684.102999999999|16647.707000000002|
+|51C1BE97280A80EBF...|19269.850000000013|       518.0| 3784.100000000002|2826.3010000000013|16443.549000000014|
+|9112D33A328C37CF6...|19130.769999999997|       399.0|           3792.01|         2712.1261|16418.643899999995|
+|F49FD0D84449AE7F7...| 18732.15000000001|       471.0| 3409.959999999999| 2551.075599999999|16181.074400000009|
+|7B3DAEAD0556C7DC4...| 18636.38999999999|       171.0|3802.2599999999975|2490.3785999999986| 16146.01139999999|
+|22CA618759C716436...|18700.199999999997|       506.0|           3723.33|         2777.2313|15922.968699999998|
+|E66E58207128619CF...|18368.330000000005|       505.5|3565.0899999999965| 2680.204899999998|15688.125100000008|
+|895F9C541258B1B18...| 18036.06999999998|       482.5|3763.2399999999975|2778.0763999999986|15257.993599999983|
+|C5DC32CDE1B4B5A2A...|17829.120000000017|       503.0|3441.4700000000053| 2602.296700000003|15226.823300000015|
+|C4E07B8C06FAB8E54...|17745.340000000015|       448.5|3598.6999999999975|2643.7069999999985|15101.633000000016|
+|740319FBAE49CDF7D...|17527.329999999994|       357.5|3575.8199999999924|2538.7501999999954|        14988.5798|
+|C9674190984BA193F...| 17598.68999999999|       510.5|3522.0400000000022| 2658.944400000001|14939.745599999991|
+|A12D0BD80032D6655...|17612.449999999986|       466.5|3625.2000000000007|2677.8720000000003|14934.577999999987|
+|12DF08C467CE0D448...|17363.939999999977|       318.0| 3520.240000000006|2465.3464000000035|14898.593599999973|
+|6DFAEA426C5CB2024...| 17372.10000000001|       402.5|3399.8199999999993|2476.3901999999994| 14895.70980000001|
++--------------------+------------------+------------+------------------+------------------+------------------+
+only showing top 20 rows
+
+Top descending 20 profit : 
++--------------------+------------------+------------+------------------+------------------+------------------+
+|             license|         sumAmount|sumSurcharge|       sumDistance|              cost|              gain|
++--------------------+------------------+------------+------------------+------------------+------------------+
+|847349F8845A667D9...|22275.479999999974|       424.5| 4698.489999999994|2866.0788999999963|19409.401099999977|
+|F153D0336BF48F93E...|21055.589999999997|       476.5| 4448.329999999998| 2713.481299999999|18342.108699999997|
+|2BF7915E6DC625234...|20817.069999999978|       414.5| 4531.599999999999|2764.2759999999994| 18052.79399999998|
+|3AAB94CA53FE93A64...|20261.399999999972|       465.0|3961.4999999999964|2416.5149999999976|17844.884999999973|
+|CE625FD96D0FAFC81...|          19387.17|       469.5|3719.3999999999955| 2268.833999999997|17118.336000000003|
+|3D757E111C78F5CAC...|          19331.81|       444.0| 3672.299999999999| 2240.102999999999|17091.707000000002|
+|51C1BE97280A80EBF...|19269.850000000013|       518.0| 3784.100000000002|2308.3010000000013|16961.549000000014|
+|9112D33A328C37CF6...|19130.769999999997|       399.0|           3792.01|         2313.1261|16817.643899999995|
+|F49FD0D84449AE7F7...| 18732.15000000001|       471.0| 3409.959999999999| 2080.075599999999| 16652.07440000001|
+|22CA618759C716436...|18700.199999999997|       506.0|           3723.33|         2271.2313|16428.968699999998|
+|7B3DAEAD0556C7DC4...| 18636.38999999999|       171.0|3802.2599999999975|2319.3785999999986| 16317.01139999999|
+|E66E58207128619CF...|18368.330000000005|       505.5|3565.0899999999965| 2174.704899999998|16193.625100000008|
+|895F9C541258B1B18...| 18036.06999999998|       482.5|3763.2399999999975|2295.5763999999986|15740.493599999983|
+|C5DC32CDE1B4B5A2A...|17829.120000000017|       503.0|3441.4700000000053| 2099.296700000003|15729.823300000015|
+|C4E07B8C06FAB8E54...|17745.340000000015|       448.5|3598.6999999999975|2195.2069999999985|15550.133000000016|
+|C9674190984BA193F...| 17598.68999999999|       510.5|3522.0400000000022| 2148.444400000001|15450.245599999991|
+|A12D0BD80032D6655...|17612.449999999986|       466.5|3625.2000000000007|2211.3720000000003|15401.077999999987|
+|740319FBAE49CDF7D...|17527.329999999994|       357.5|3575.8199999999924|2181.2501999999954|        15346.0798|
+|6DFAEA426C5CB2024...| 17372.10000000001|       402.5|3399.8199999999993|2073.8901999999994| 15298.20980000001|
+|1E94B13BB698BC3C9...|          17774.35|       382.0| 4154.099999999998|2534.0009999999984|         15240.349|
++--------------------+------------------+------------+------------------+------------------+------------------+
+only showing top 20 rows
+
+Top ascending 20 profit : 
++--------------------+---------+------------+-----------+------+-------------------+
+|             license|sumAmount|sumSurcharge|sumDistance|  cost|               gain|
++--------------------+---------+------------+-----------+------+-------------------+
+|6C50A58A59D8E89D5...|      3.5|         0.5|       83.7|51.057|            -47.557|
+|4558DBB6F6F8BB2E1...|      9.5|         0.0|       84.9|51.789|            -42.289|
+|7D674F112E84AD6E6...|      3.0|         0.0|       29.5|17.995|-14.995000000000001|
+|485C9DD9F96691139...|      4.0|         1.0|       20.8|12.688|             -8.688|
+|D6D231705F96D5A35...|      2.6|         0.0|        0.0|   0.0|                2.6|
+|94267A1BE8BC63568...|      3.0|         0.0|        0.1| 0.061|              2.939|
+|8996C38B1F60B08FD...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|04FBFEDCF02618C41...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|32B30A250ABD6331E...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|1C0C6424780B873F0...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|4551CBAC638C75857...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|D3D9446802A442597...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|48908ED9705FBE5B3...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|6B180037ABBEBEA99...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|0276CBF4FBFEDD53B...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|0A0A7E58E09B36EB6...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|28EAF0C54680C6998...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|B3BF93C3F758B0E88...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|168F8B88EF4C35549...|      3.0|         0.0|        0.0|   0.0|                3.0|
+|B9D61450739210F3D...|      3.0|         0.0|        0.0|   0.0|                3.0|
++--------------------+---------+------------+-----------+------+-------------------+
+only showing top 20 rows
+
+
+Cost by hour : 
++----+------------------+-------------------+------------------+------------------+------------------+
+|hour|         avgAmount|       avgSurcharge|       avgDistance|              cost|              gain|
++----+------------------+-------------------+------------------+------------------+------------------+
+|  00|13.951477220165586| 0.3176965686408814| 2.788039527271496|1.7007041116356125|12.250773108529973|
+|  01|13.887459880944691|0.32507976161708296|2.7641285103109796|1.6861183912896975|12.201341489654993|
+|  02|13.931982462927156| 0.3186597356544165|  2.78144856544165|1.6966836249194066|12.235298838007749|
+|  03|13.892367900339769| 0.3235565037932343|2.7695173515585547|1.6894055844507183|12.202962315889051|
+|  04|13.898560797889086| 0.3190265236792628|2.7707730196002505|1.6901715419561527|12.208389255932934|
+|  05|13.900757368363713|0.32289879055324017|2.7689874628857822| 1.689082352360327|12.211675016003387|
+|  06|13.920918342196295|0.31980075682763887|  2.78016315773364|1.6958995262175203|12.225018815978775|
+|  07|13.921625734426078| 0.3223456596357383|2.7756600451744515|1.6931526275564155|12.228473106869663|
+|  08|13.883017483606615| 0.3193941501818082|2.7709570874535383|1.6902838233466584|12.192733660259957|
+|  09|13.924822172620312| 0.3198699848190956| 2.780601116212969| 1.696166680889911|  12.2286554917304|
+|  10|13.933457383709849| 0.3184520827340106| 2.781116534196143| 1.696481085859647|12.236976297850202|
+|  11|13.918707562619772| 0.3221119646910124| 2.774708255752319|1.6925720360089145|12.226135526610857|
+|  12|13.895559884459704| 0.3196757573653712|2.7732587498849606|1.6916878374298259| 12.20387204702988|
+|  13|13.908463162826402| 0.3222051719045469| 2.772811870868741| 1.691415241229932|12.217047921596471|
+|  14|13.912223733204863| 0.3185029670936983| 2.777387314083343| 1.694206261590839|12.218017471614024|
+|  15|13.929779688467585| 0.3228685242019449| 2.782365856646093|1.6972431725541168|12.232536515913468|
+|  16|13.921995230781157| 0.3175806056068976| 2.780901472714131|1.6963498983556198|12.225645332425536|
+|  17|13.932165469036367|  0.324422537612411| 2.777280535310916|1.6941411265396586|12.238024342496708|
+|  18|13.928494155933086| 0.3186172397960417| 2.778973876900029|1.6951740649090177|12.233320091024067|
+|  19|13.901549265024448|   0.32359060036365| 2.770700145664685|1.6901270888554578| 12.21142217616899|
+|  20|13.912214309908236| 0.3196775915740577|2.7793659252568585|1.6954132144066836|12.216801095501554|
+|  21|13.897417799449741|0.32371574409545345|2.7718270894058676|1.6908145245375792|12.206603274912162|
+|  22|13.895003189089605| 0.3173335012651401| 2.770611384807663|1.6900729447326743| 12.20493024435693|
+|  23|13.913371525852655| 0.3245570472766358|2.7747696713867342|1.6926094995459078|12.220762026306748|
++----+------------------+-------------------+------------------+------------------+------------------+
+
+Process finished with exit code 0
+
+Cost by hour and by borough :
++--------------+----+------------------+-------------------+------------------+------------------+------------------+
+|dropoffBorough|hour|avgAmount         |avg(surcharge)     |avgDistance       |cost              |gain              |
++--------------+----+------------------+-------------------+------------------+------------------+------------------+
+|Bronx         |00  |11.77083067092652 |0.33226837060702874|2.2818210862619805|1.391910862619808 |10.378919808306712|
+|Bronx         |01  |13.99315789473684 |0.312280701754386  |2.407333333333332 |1.4684733333333324|12.524684561403507|
+|Bronx         |02  |12.35285185185185 |0.3                |2.3828888888888886|1.453562222222222 |10.899289629629628|
+|Bronx         |03  |13.281899224806198|0.2926356589147287 |2.2861627906976736|1.394559302325581 |11.887339922480617|
+|Bronx         |04  |12.943367697594503|0.3281786941580756 |2.248487972508591 |1.3715776632302403|11.571790034364263|
+|Bronx         |05  |11.98938461538461 |0.3326923076923077 |2.3843846153846155|1.4544746153846155|10.534909999999995|
+|Bronx         |06  |13.345942028985506|0.3079710144927536 |2.469963768115942 |1.5066778985507245|11.839264130434781|
+|Bronx         |07  |13.380916030534353|0.31297709923664124|2.2625190839694653|1.3801366412213738|12.00077938931298 |
+|Bronx         |08  |12.579693877551021|0.3554421768707483 |2.170748299319727 |1.3241564625850333|11.255537414965987|
+|Bronx         |09  |14.235347222222224|0.3142361111111111 |2.2206944444444434|1.3546236111111105|12.880723611111113|
+|Bronx         |10  |12.953774319066147|0.3424124513618677 |2.1380933852140083|1.304236964980545 |11.649537354085602|
+|Bronx         |11  |12.035253623188405|0.3333333333333333 |2.216304347826087 |1.351945652173913 |10.683307971014491|
+|Bronx         |12  |12.234887459807076|0.3295819935691318 |2.0762057877813507|1.2664855305466238|10.968401929260452|
+|Bronx         |13  |12.184904214559388|0.3065134099616858 |2.368697318007663 |1.4449053639846743|10.739998850574715|
+|Bronx         |14  |14.012611464968153|0.34394904458598724|2.4762738853503183|1.5105270700636941|12.502084394904458|
+|Bronx         |15  |12.12250859106529 |0.30927835051546393|2.420274914089347 |1.4763676975945015|10.64614089347079 |
+|Bronx         |16  |15.076666666666666|0.300314465408805  |2.6885220125786167|1.6399984276729562|13.43666823899371 |
+|Bronx         |17  |12.600807017543858|0.33157894736842103|2.2986315789473695|1.4021652631578954|11.198641754385962|
+|Bronx         |18  |13.09974358974359 |0.2916666666666667 |2.097307692307692 |1.279357692307692 |11.820385897435898|
+|Bronx         |19  |12.68506896551724 |0.31551724137931036|2.027241379310345 |1.2366172413793104|11.44845172413793 |
+|Bronx         |20  |12.210477707006369|0.29777070063694266|2.325             |1.41825           |10.792227707006369|
+|Bronx         |21  |12.780117647058821|0.30196078431372547|2.2758823529411765|1.3882882352941177|11.391829411764704|
+|Bronx         |22  |12.345049833887044|0.30564784053156147|2.4305647840531557|1.4826445182724248|10.86240531561462 |
+|Bronx         |23  |11.323137931034484|0.32413793103448274|1.9732758620689648|1.2036982758620685|10.119439655172416|
+|Brooklyn      |00  |11.916612667478677|0.4368453105968331 |2.3165164433617544|1.4130750304506703|10.503537637028007|
+|Brooklyn      |01  |11.880697350069731|0.4378090528718144 |2.3071434005325218|1.4073574743248383|10.473339875744893|
+|Brooklyn      |02  |11.84779390595009 |0.43240163147792704|2.305423464491363 |1.4063083133397314|10.441485592610357|
+|Brooklyn      |03  |11.978607482561836|0.4404565630944832 |2.3613189600507307|1.4404045656309457|10.53820291693089 |
+|Brooklyn      |04  |11.843573430834857|0.4308348567946374 |2.293039609993906 |1.3987541620962824|10.444819268738573|
+|Brooklyn      |05  |11.973595235077932|0.43372196172855154|2.3226460524648327|1.416814092003548 |10.556781143074383|
+|Brooklyn      |06  |11.842969675432364|0.43431651267472166|2.304457474532102 |1.405719059464582 |10.437250615967782|
+|Brooklyn      |07  |11.905287474332647|0.43724332648870634|2.306053644763861 |1.4066927233059552|10.498594751026692|
+|Brooklyn      |08  |11.954801080550105|0.44020137524557956|2.339064341846758 |1.4268292485265224|10.527971832023583|
+|Brooklyn      |09  |11.974899644308941|0.4377540650406504 |2.3376105182926827|1.4259424161585363|10.548957228150405|
+|Brooklyn      |10  |12.026958978138046|0.4322647998034881 |2.336577008106116 |1.4253119749447307|10.601647003193316|
+|Brooklyn      |11  |11.992378296146043|0.4351546653144016 |2.3529158215010146|1.4352786511156188|10.557099645030425|
+|Brooklyn      |12  |11.958161375661374|0.43716931216931215|2.3380339105339125|1.4262006854256866|10.531960690235689|
+|Brooklyn      |13  |12.00567905966526 |0.43924875431199695|2.3297815254886927|1.4211667305481024|10.584512329117157|
+|Brooklyn      |14  |11.922464346144547|0.43413101281121586|2.308830070099105 |1.4083863427604542|10.514078003384093|
+|Brooklyn      |15  |11.919036438285858|0.4341801385681293 |2.3375032075955846|1.4258769566333065|10.493159481652551|
+|Brooklyn      |16  |12.099359737577457|0.43615599562629087|2.3542850200461682|1.4361138622281626|10.663245875349293|
+|Brooklyn      |17  |11.988099014967379|0.4394268901112959 |2.3345439426890118|1.4240718050402972|10.564027209927081|
+|Brooklyn      |18  |11.91792192046557 |0.42901309408341415|2.3221435499515044|1.4165075654704176|10.501414354995152|
+|Brooklyn      |19  |11.909495001947286|0.4359340516681812 |2.321313773854342 |1.4160014020511484|10.493493599896137|
+|Brooklyn      |20  |11.94538904899135 |0.4340778097982709 |2.350965417867436 |1.434088904899136 |10.511300144092214|
+|Brooklyn      |21  |12.105914132846141|0.4297925094610466 |2.3595262951846543|1.439311040062639 |10.666603092783502|
+|Brooklyn      |22  |11.841041792123328|0.4338793207274479 |2.3149729013609552|1.4121334698301826|10.428908322293145|
+|Brooklyn      |23  |11.814199213630404|0.4350589777195282 |2.2881035386631727|1.3957431585845352|10.41845605504587 |
+|Manhattan     |00  |11.05873860845428 |0.3165317045099802 |1.9393657029378255|1.1830130787920736|9.875725529662207 |
+|Manhattan     |01  |11.069145119611916|0.32391227666893896|1.9367006452226563|1.1813873935858203|9.887757726026095 |
+|Manhattan     |02  |11.061211455895661|0.31754632429447716|1.9372855822793842|1.1817442051904243|9.879467250705236 |
+|Manhattan     |03  |11.06438764632687 |0.32229181362098075|1.9373179285584081|1.181763936420629 |9.882623709906241 |
+|Manhattan     |04  |11.06262027062063 |0.3175640384926107 |1.9375236069725574|1.18188940025326  |9.88073087036737  |
+|Manhattan     |05  |11.062705857860875|0.3216361167011985 |1.936556779316567 |1.1812996353831058|9.88140622247777  |
+|Manhattan     |06  |11.05978137108877 |0.3186704206728286 |1.9387826276415323|1.1826574028613346|9.877123968227435 |
+|Manhattan     |07  |11.073721253580269|0.3209548439380758 |1.9399236275806722|1.18335341282421  |9.890367840756058 |
+|Manhattan     |08  |11.052380524637359|0.31789547467860846|1.9373488317901897|1.1817827873920157|9.870597737245344 |
+|Manhattan     |09  |11.062864571051506|0.3188117889747365 |1.9351903828662358|1.180466133548404 |9.882398437503102 |
+|Manhattan     |10  |11.070361089198197|0.3173184999143357 |1.9414340205933238|1.1842747525619275|9.88608633663627  |
+|Manhattan     |11  |11.071811769874552|0.32102365492660895|1.9372778528696422|1.1817394902504816|9.89007227962407  |
+|Manhattan     |12  |11.04823762849    |0.31868246520336574|1.9372451442622212|1.181719537999955 |9.866518090490045 |
+|Manhattan     |13  |11.067864377309284|0.3208176088202169 |1.9385258145462447|1.1825007468732092|9.885363630436075 |
+|Manhattan     |14  |11.060727199339162|0.317562798032516  |1.9380942439830295|1.182237488829648 |9.878489710509514 |
+|Manhattan     |15  |11.083082970764073|0.32169712116381266|1.9433988169383372|1.1854732783323856|9.897609692431686 |
+|Manhattan     |16  |11.05178775129619 |0.31615382880088433|1.9382796996665053|1.1823506167965683|9.869437134499622 |
+|Manhattan     |17  |11.071546927186711|0.32343994945370663|1.9369544268737795|1.1815422003930054|9.890004726793705 |
+|Manhattan     |18  |11.06746576576576 |0.31722222222222224|1.9398933370870883|1.1833349356231238|9.884130830142636 |
+|Manhattan     |19  |11.063100805058316|0.3224384688402315 |1.9385339955437821|1.1825057372817072|9.880595067776609 |
+|Manhattan     |20  |11.063206382135133|0.31858812829662536|1.938389903283332 |1.1824178410028325|9.8807885411323   |
+|Manhattan     |21  |11.063416383585873|0.3229113991825856 |1.9379144629992089|1.1821278224295173|9.881288561156355 |
+|Manhattan     |22  |11.054371949063936|0.31589363750554716|1.936972061135304 |1.1815529572925354|9.872818991771402 |
+|Manhattan     |23  |11.073149044984655|0.32357520188725214|1.9396652742041862|1.1831958172645536|9.8899532277201   |
+|NA            |00  |42.9585656836461  |0.18565683646112602|1.7228150134048255|1.0509171581769434|41.907648525469156|
+|NA            |01  |42.72720694645442 |0.19464544138929088|1.8393342981186687|1.1219939218523878|41.60521302460204 |
+|NA            |02  |40.36879895561358 |0.1906005221932115 |2.0566057441253256|1.2545295039164486|39.114269451697126|
+|NA            |03  |41.50788381742737 |0.177731673582296  |1.8877316735822964|1.1515163208852008|40.35636749654217 |
+|NA            |04  |39.380564738291994|0.19972451790633608|1.6988292011019281|1.0362858126721761|38.34427892561982 |
+|NA            |05  |39.37883263009846 |0.19198312236286919|2.068776371308018 |1.2619535864978908|38.11687904360057 |
+|NA            |06  |42.04654498044328 |0.20078226857887874|1.9522033898305087|1.1908440677966103|40.85570091264667 |
+|NA            |07  |40.893036211699155|0.18593314763231197|1.8415041782729802|1.123317548746518 |39.769718662952634|
+|NA            |08  |39.43299610894942 |0.19508430609597924|1.980843060959792 |1.2083142671854732|38.224681841763946|
+|NA            |09  |39.449815078236114|0.18492176386913228|1.822816500711238 |1.1119180654338552|38.33789701280226 |
+|NA            |10  |42.89569705093834 |0.17962466487935658|1.7868498659517427|1.089978418230563 |41.80571863270777 |
+|NA            |11  |40.81997134670487 |0.1969914040114613 |1.6691977077363889|1.0182106017191972|39.80176074498567 |
+|NA            |12  |40.24672323759791 |0.2056135770234987 |1.9298563968668405|1.1772124020887726|39.06951083550914 |
+|NA            |13  |41.81713876967096 |0.18097281831187412|1.9294992846924182|1.176994563662375 |40.640144206008586|
+|NA            |14  |39.36778677462888 |0.1747638326585695 |1.9620512820512808|1.1968512820512813|38.1709354925776  |
+|NA            |15  |41.73719424460431 |0.20287769784172663|1.8225467625899272|1.1117535251798556|40.625440719424454|
+|NA            |16  |38.99737940026074 |0.20795306388526727|1.7200391134289439|1.0492238591916558|37.948155541069085|
+|NA            |17  |44.46060321715818 |0.19839142091152814|1.8598927613941019|1.134534584450402 |43.32606863270778 |
+|NA            |18  |42.41640259740262 |0.16948051948051948|1.925376623376623 |1.17447974025974  |41.24192285714288 |
+|NA            |19  |40.54909933774834 |0.18211920529801323|1.8848609271523185|1.1497651655629142|39.399334172185426|
+|NA            |20  |42.89186721991701 |0.19225449515905949|1.938879668049794 |1.1827165975103744|41.70915062240664 |
+|NA            |21  |39.45009383378014 |0.18498659517426275|1.8839410187667571|1.1492040214477217|38.300889812332414|
+|NA            |22  |45.143988095238086|0.18303571428571427|1.8364434523809519|1.1202305059523807|44.02375758928571 |
+|NA            |23  |43.93318373071529 |0.22230014025245443|1.71663394109397  |1.0471467040673217|42.88603702664797 |
+|Queens        |00  |18.972204013775098|0.3098206863792899 |4.631492696829357 |2.8252105450659073|16.14699346870919 |
+|Queens        |01  |19.079919012726567|0.31533616146034193|4.564733256202599 |2.784487286283585 |16.29543172644298 |
+|Queens        |02  |18.914859755344118|0.31026813295440503|4.635360187816632 |2.8275697145681455|16.087290040775972|
+|Queens        |03  |18.80925470610834 |0.3186067358176463 |4.470813164297608 |2.727196030221541 |16.0820586758868  |
+|Queens        |04  |18.902306843267098|0.318616629874908  |4.547343635025756 |2.773879617365711 |16.128427225901387|
+|Queens        |05  |18.909598864955516|0.3229072617051464 |4.499044240938992 |2.744416986972785 |16.165181877982732|
+|Queens        |06  |18.935402934808764|0.30719268703391867|4.541764493625214 |2.7704763411113804|16.164926593697384|
+|Queens        |07  |18.9757417834228  |0.31373576011522847|4.559235301820089 |2.7811335341102543|16.194608249312548|
+|Queens        |08  |18.775067209273644|0.31378715008015784|4.526260944629428 |2.7610191762239507|16.014048033049693|
+|Queens        |09  |18.98946039035592 |0.3147722923842327 |4.53993111366246  |2.7693579793341008|16.22010241102182 |
+|Queens        |10  |19.301243373493982|0.31487951807228914|4.661333734939759 |2.843413578313253 |16.45782979518073 |
+|Queens        |11  |19.016932767707925|0.31527188584650984|4.619028152718857 |2.817607173158503 |16.19932559454942 |
+|Queens        |12  |19.32462368289011 |0.3112769693928751 |4.671584295032615 |2.8496664199698953|16.474957262920213|
+|Queens        |13  |18.705831928413954|0.3195435092724679 |4.527494488393205 |2.761771637919855 |15.944060290494098|
+|Queens        |14  |19.047145445759842|0.3076830152210679 |4.582486107755498 |2.7953165257308537|16.251828920028988|
+|Queens        |15  |19.099882228397515|0.31917427550615324|4.649591107582373 |2.8362505756252476|16.26363165277227 |
+|Queens        |16  |19.077442279942286|0.31277056277056275|4.585453342953341 |2.7971265392015376|16.280315740740747|
+|Queens        |17  |18.937330584900806|0.31654212831744394|4.617606287039422 |2.8167398350940474|16.12059074980676 |
+|Queens        |18  |19.121864140926633|0.3156370656370656 |4.572449324324323 |2.7891940878378367|16.332670053088798|
+|Queens        |19  |18.92346345297355 |0.32630337961750067|4.509532355252817 |2.750814736704218 |16.172648716269332|
+|Queens        |20  |18.792331450546808|0.30969835356327363|4.512634298762167 |2.752706922244922 |16.039624528301886|
+|Queens        |21  |19.193785513181467|0.3187228052213975 |4.64381750703865  |2.8327286792935764|16.36105683388789 |
+|Queens        |22  |18.79521978694749 |0.30543651279539613|4.562532141545243 |2.7831446063425984|16.012075180604892|
+|Queens        |23  |19.193845088161233|0.3135390428211587 |4.619327455919397 |2.817789748110832 |16.3760553400504  |
+|Staten Island |00  |16.35             |0.20512820512820512|2.350512820512821 |1.4338128205128207|14.916187179487181|
+|Staten Island |01  |10.263636363636364|0.4318181818181818 |1.4872727272727273|0.9072363636363636|9.3564            |
+|Staten Island |02  |9.8               |0.21428571428571427|1.5599999999999996|0.9515999999999998|8.848400000000002 |
+|Staten Island |03  |17.633333333333333|0.16666666666666666|2.600740740740741 |1.5864518518518518|16.04688148148148 |
+|Staten Island |04  |21.15125          |0.20833333333333334|3.0729166666666674|1.8744791666666671|19.276770833333334|
+|Staten Island |05  |22.52541666666666 |0.20833333333333334|2.98875           |1.8231375         |20.70227916666666 |
+|Staten Island |06  |13.255862068965516|0.3103448275862069 |1.8868965517241378|1.151006896551724 |12.104855172413792|
+|Staten Island |07  |12.813636363636363|0.18181818181818182|2.787727272727272 |1.700513636363636 |11.113122727272726|
+|Staten Island |08  |16.91785714285714 |0.16071428571428573|2.6403571428571433|1.6106178571428573|15.307239285714283|
+|Staten Island |09  |11.684615384615386|0.15384615384615385|2.281153846153846 |1.391503846153846 |10.29311153846154 |
+|Staten Island |10  |13.741666666666667|0.2708333333333333 |1.8683333333333332|1.1396833333333332|12.601983333333333|
+|Staten Island |11  |15.203448275862069|0.3275862068965517 |3.1965517241379313|1.949896551724138 |13.253551724137932|
+|Staten Island |12  |15.176521739130434|0.32608695652173914|2.2043478260869565|1.3446521739130435|13.83186956521739 |
+|Staten Island |13  |19.949333333333335|0.26666666666666666|2.731666666666667 |1.6663166666666667|18.28301666666667 |
+|Staten Island |14  |19.67521739130435 |0.34782608695652173|2.2021739130434783|1.3433260869565218|18.331891304347828|
+|Staten Island |15  |17.88421052631579 |0.3157894736842105 |1.3310526315789477|0.8119421052631581|17.072268421052634|
+|Staten Island |16  |14.260000000000002|0.17857142857142858|2.4939285714285715|1.5212964285714285|12.738703571428573|
+|Staten Island |17  |13.901875         |0.265625           |1.6515625         |1.007453125       |12.894421875      |
+|Staten Island |18  |18.4771875        |0.15625            |1.376875          |0.83989375        |17.637293749999998|
+|Staten Island |19  |9.76086956521739  |0.2826086956521739 |1.5582608695652176|0.9505391304347827|8.810330434782609 |
+|Staten Island |20  |21.246296296296297|0.2222222222222222 |2.885925925925926 |1.7604148148148149|19.48588148148148 |
+|Staten Island |21  |13.606666666666667|0.2833333333333333 |2.1853333333333333|1.3330533333333334|12.273613333333333|
+|Staten Island |22  |10.791904761904762|0.30952380952380953|1.9276190476190478|1.175847619047619 |9.616057142857143 |
+|Staten Island |23  |21.917037037037037|0.2037037037037037 |3.9607407407407407|2.4160518518518517|19.500985185185186|
++--------------+----+------------------+-------------------+------------------+------------------+------------------+
+
+Process finished with exit code 0
+
+Cost by taxi vendor by hour :
++--------+----+------------------+-------------------+------------------+------------------+------------------+
+|vendorId|hour|         avgAmount|     avg(surcharge)|       avgDistance|              cost|              gain|
++--------+----+------------------+-------------------+------------------+------------------+------------------+
+|     CMT|  00|13.840962949622613| 0.3196084415265476| 2.736632557834934|1.6693458602793096|12.171617089343304|
+|     CMT|  01| 13.77739662725996|0.32026674291649004| 2.715595718178023|1.6565133880885938|12.120883239171366|
+|     CMT|  02|13.804691996226113| 0.3176399481091281|2.7289252299709106|1.6646443902822554|12.140047605943858|
+|     CMT|  03|13.802635535689056| 0.3193085191984945|2.7283413853920018| 1.664288245089121|12.138347290599935|
+|     CMT|  04|13.803053926565982| 0.3185309263988094|2.7268734654809013|1.6633928139433498|12.139661112622631|
+|     CMT|  05|13.805549876155503| 0.3203203532032035|2.7300616923006173|1.6653376323033766|12.140212243852126|
+|     CMT|  06|13.810318690868547| 0.3186728319149983| 2.730595700723105| 1.665663377441094|12.144655313427453|
+|     CMT|  07|13.790908359333258|0.32006952369016445| 2.716548814997065|1.6570947771482096|12.133813582185049|
+|     CMT|  08|13.747389316784846| 0.3200107311278186|2.7168045523610114| 1.657250776940217|12.090138539844629|
+|     CMT|  09|13.795482559151715| 0.3190629013661642| 2.732718959100479| 1.666958565051292|12.128523994100423|
+|     CMT|  10|13.809015732401525|0.31866397624555015|2.7295322932559034| 1.665014698886101|12.144001033515424|
+|     CMT|  11|13.802744803373082|0.31840404902137714| 2.723465949173954| 1.661314228996112| 12.14143057437697|
+|     CMT|  12|13.770904861175033| 0.3186759348160619|2.7193128460759417|1.6587808361063243| 12.11212402506871|
+|     CMT|  13| 13.79021106280621| 0.3191031063003381|2.7253120923247796|1.6624403763181155|12.127770686488095|
+|     CMT|  14|13.798274461772229|0.31729893828147004| 2.726698192917073|1.6632858976794145|12.134988564092815|
+|     CMT|  15|13.823239604220753|0.31958978994773346|2.7422878932316492| 1.672795614871306|12.150443989349446|
+|     CMT|  16|13.783036085880251| 0.3196297720839867| 2.721438175356929|1.6600772869677267|12.122958798912524|
+|     CMT|  17| 13.80060204333448| 0.3205814125660135| 2.726278071171217|1.6630296234144424|12.137572419920039|
+|     CMT|  18|13.817509920213014| 0.3189434359757793| 2.728318650654751|1.6642743768993982|12.153235543313617|
+|     CMT|  19|13.787994535842499| 0.3189678923212478|2.7219184387369983| 1.660370247629569| 12.12762428821293|
+|     CMT|  20|  13.8066892505528|0.32007117379172373|2.7328811071917443| 1.667057475386964|12.139631775165837|
+|     CMT|  21|13.788616720955476|0.31911788898759585|2.7247201658276596|1.6620793011548722|12.126537419800604|
+|     CMT|  22| 13.78261869739583|0.31874429434579565| 2.720884013614416|1.6597392483047937|12.122879449091036|
+|     CMT|  23|13.798790730926637|0.31915239007241053|  2.72673942701228|1.6633110504774908|12.135479680449146|
+|     VTS|  00|14.058591758492865|0.31584351038440056|2.8378650726146355|1.7310976942949277|12.327494064197937|
+|     VTS|  01|  14.0056410681705| 0.3302477740565988| 2.816240934772714|1.7179069702113554|12.287734097959143|
+|     VTS|  02|14.055279047038804| 0.3196475262102404|2.8323239217627503|1.7277175922752777|12.327561454763526|
+|     VTS|  03|13.988814670996884| 0.3281223524428128|2.8137743928268844|1.7164023796243995|12.272412291372484|
+|     VTS|  04|13.991180651806253| 0.3195071398598731|2.8133455615884446|1.7161407925689511|12.275039859237303|
+|     VTS|  05|14.003182759522472|0.32567270516889196| 2.810864285663798|1.7146272142549168|12.288555545267556|
+|     VTS|  06|14.027708113003209| 0.3208898275567264| 2.828023140202777|1.7250941155236938|12.302613997479515|
+|     VTS|  07|14.061693065597984|0.32478460309719187|2.8389993850851343|1.7317896249019318|12.329903440696052|
+|     VTS|  08|14.014266532862479| 0.3187974771982419| 2.823361163334264| 1.722250309633901|12.292016223228577|
+|     VTS|  09|14.063558401747638| 0.3207357034635848|2.8319619463725734|1.7274967872872697|12.336061614460368|
+|     VTS|  10| 14.05425895550197| 0.3182463873821938|2.8311918692609797|1.7270270402491976|12.327231915252773|
+|     VTS|  11| 14.04320738233045|  0.326092853343291|2.8297229688551337|1.7261310110016315|12.317076371328818|
+|     VTS|  12| 14.01582427901163| 0.3206403639282168|2.8253045583024314| 1.723435780564483|12.292388498447147|
+|     VTS|  13|14.034823816931125| 0.3255199463462423| 2.823568712274703| 1.722376914487569|12.312446902443556|
+|     VTS|  14|14.022583075102984| 0.3196690634247527|2.8264794932870676|1.7241524909051111|12.298430584197874|
+|     VTS|  15|14.044064754543463|0.32638560759395474| 2.825357306572071|1.7234679570089635|12.320596797534499|
+|     VTS|  16|14.055923762028016| 0.3156056232712433|2.8382120734941405|1.7313093648314257| 12.32461439719659|
+|     VTS|  17|14.073621984009058| 0.3285525012382367|2.8321181985424175|1.7275921011108746|12.346029882898184|
+|     VTS|  18| 14.03618894948352| 0.3183007116872893|2.8281277418371804|1.7251579225206801| 12.31103102696284|
+|     VTS|  19| 14.02397941966722| 0.3285746187711351| 2.823294625576895|1.7222097216019059|12.301769698065314|
+|     VTS|  20|14.013672418265918| 0.3192991780717906|2.8240592117335175|1.7226761191574456|12.290996299108471|
+|     VTS|  21|14.014094857699332| 0.3286464324274736| 2.822344026759441| 1.721629856323259|12.292465001376073|
+|     VTS|  22|14.002807197927176|0.31598020823117395| 2.818312005087144|1.7191703231031579|12.283636874824017|
+|     VTS|  23|14.036805213065863|0.33037928622402474| 2.826510891760701|1.7241716439740276|12.312633569091835|
++--------+----+------------------+-------------------+------------------+------------------+------------------+
+
+
+Process finished with exit code 0
+
