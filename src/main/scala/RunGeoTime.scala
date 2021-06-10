@@ -373,6 +373,8 @@ object RunGeoTime extends Serializable {
       .sort("hour")
       .show(24)
 
+
+
     println("Cost by hour and by borough : ")
     sessions
       .withColumn("dropoffBorough", boroughUDF($"dropoffX", $"dropoffY"))
@@ -385,8 +387,7 @@ object RunGeoTime extends Serializable {
       .withColumnRenamed("avg(tripDistance)", "avgDistance")
       .withColumn("cost", col("avgDistance") * costByMiles)
       .withColumn("gain", col("avgAmount") - col("cost"))
-      .sort("dropoffBorough", "hour").show(100)
-
+      .sort("dropoffBorough", "hour").show(200)
 
     println("Cost by taxi vendor by hour ")
     sessions
@@ -397,7 +398,7 @@ object RunGeoTime extends Serializable {
       .withColumnRenamed("avg(tripDistance)", "avgDistance")
       .withColumn("cost", col("avgDistance") * costByMiles)
       .withColumn("gain", col("avgAmount") - col("cost"))
-      .sort("vendorId", "hour").show(100)
+      .sort("vendorId", "hour").show(144)
   }
 
   def safe[S, T](f: S => T): S => Either[T, (S, Exception)] = {
