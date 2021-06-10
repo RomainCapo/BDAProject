@@ -332,6 +332,25 @@ La déviation absolue moyenne est moins sensible aux valeurs extrêmes.
 
 Afin d'avoir un modèle simple de comparaison, nous avons calculé la valeur moyenne du pourboire comme prédiction. Ainsi nos modèles de régression plus complexes se doivent au moins de faire mieux que la RMSE et le MAE de ce modèle simple.
 
+En analysant les résultats, nous observons qu' il y a des différences :
+
+* entre les profits réalisés par les chauffeurs 
+  * Différence de 4000$ entre le 1er et le 20ème
+* entre les heures
+  * Min=12.19$ à 8h, Max=12.25$ à 24h,  IQR = 0.02$
+* pour les trajets intra-quartier
+* entre les entreprises 
+  * (12.13\$/h VS 12.30\$/h)
+
+
+![Hourly profit by borough](img/hourly_profit_borough.png)
+
+Nous voyons sur l'image ci-dessus qu'il y a peu de variabilité entres les heures pour les quartiers de Brooklyn et Manhattan. Alors qu'il y a une forte variabilité dans le quartier de Staten Island.
+
+![Hourly profit by vendor](img/hourly_profit_vendor.png)
+
+Nous voyons que le profit moyen par heure pour les courses intra quartier est plus élevé pour l'entreprise VTS. Même si la différence semble petite, il ne faut pas oublier qu'elle est à multiplier par le nombre de courses, le nombre d'heures par jour et ainsi de suite.
+
 ## 7. Résultats obtenus
 
 Nous avons pu, au travers de l'analyse du jeu de données des trajets de taxi de New York, répondre à des questions que nous nous posions sur cette problématique.
