@@ -5,6 +5,9 @@
 * Freiburghaus Jonas
 * Moulin Vincent
 
+## Output
+Les outputs de la console se trouve dans le fichier ``output.txt``.
+
 ## Questions
 ### Statistiques descriptives
 
@@ -17,10 +20,14 @@
 
 ## 1. Description du jeu de données (taille, information contenu)
 
-Les données ont été téléchargées en suivant les liens ci-dessous :
+Les données ont été téléchargées sépararment en suivant les liens ci-dessous :
 
 * [Trip Data](http://chriswhong.com/wp-content/uploads/2014/06/nycTaxiTripData2013.torrent)
 * [Fare Data](http://chriswhong.com/wp-content/uploads/2014/06/nycTaxiFareData2013.torrent)
+
+Ou depuis un unique lien disponible ici (la deuxième option a été utilisé pour le projet9) :
+
+* [Merge Data](https://www.swisstransfer.com/d/de30ea1b-541a-488b-a502-03d74bb4fd1c)
 
 Nous avons choisi d'analyser les données pour le mois de janvier 2013.
 
