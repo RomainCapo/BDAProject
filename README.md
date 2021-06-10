@@ -267,7 +267,15 @@ Le jeu d'entraînement est également séparé en jeu d'entraînement et validat
 
 Avec toutes ces différentes étapes définies, le modèle est maintenant prêt à être entraîné à l'aide de la méthode 'fit()'. Les prédictions sur le jeu de test sont ensuite effectuées avec la méthode 'transform()'. Il est a noter que pour rendre les prédictions plus réalistes toutes les valeurs négatives que le modèle a prédites sont ramenées à 0 (max(0, prediction)) car il n'est pas possible qu'un passager d'un taxi donne un tips négatif.
 
-On constate au vu des résultats obtenus au chapitre 7 que le modèle obtiennent des résultats supérieurs à la baseline calcul au point 1. On constate que le modèle avec les meilleurs résultats est la forêt aléatoire avec une MAE de 0.39 et une RMSE 1.05. Donc pour répondre à la question posée en début de chapitre, oui il est possible de construire un modèle de machine learning capable de prédire le prix qui a de meilleur résultats que simplement prendre la moyenne des tips.
+Résultats obtenu :
+* Régression linéaire : 
+  * RMSE : 1.3032129870441562
+  * MAE : 0.600202843322619
+* Fôret aléatoire : 
+  * RMSE : 1.0551913976752616
+  * MAE : 0.3942736436857447
+
+On constate au vu des résultats obtenus au chapitre 7 que les modèles obtiennent des résultats supérieurs à la baseline calcul au point 1. On constate que le modèle avec les meilleurs résultats est la forêt aléatoire avec une MAE de 0.39 et une RMSE 1.05. Donc pour répondre à la question posée en début de chapitre, oui il est possible de construire un modèle de machine learning capable de prédire le prix qui a de meilleur résultats que simplement prendre la moyenne des tips.
 
 ### 3.3 Profit des taxis
 
